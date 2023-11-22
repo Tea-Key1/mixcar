@@ -86,6 +86,10 @@ export default function Experience() {
 
         const mx: number = (mobileX * width / 2);
         const my: number = (-mobileY * height / 2) * 1.4
+
+        wheel_LRef.current?.lookAt(mx, 0, my)
+        wheel_RRef.current?.lookAt(mx, 0, my)
+
         target.position.set(mx, 0, my)
     });
 
@@ -101,21 +105,20 @@ export default function Experience() {
 
         const px: number = (pcX * width / 2);
         const py: number = (-pcY * height / 2) * 1.4
+
+        wheel_LRef.current?.lookAt(px, 0, py)
+        wheel_RRef.current?.lookAt(px, 0, py)
+
         target.position.set(px, 0, py)
     })
 
     useFrame((state, delta: number) => {
-
         // const vx: number = (state.pointer.x * width / 2)
         // const vy: number = (-state.pointer.y * height / 2) * 1.3
 
         // wheel_LRef.current?.lookAt(vx, 0, vy)
         // wheel_RRef.current?.lookAt(vx, 0, vy)
 
-        // addEventListener("mousemove",()=>{
-        //     target.position.set(vx, 0, vy)
-        // })
-        
         entityManager.update(delta)
     })
 
