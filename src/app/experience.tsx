@@ -71,44 +71,37 @@ export default function Experience() {
     vehicle.maxSpeed = 20
     vehicle.scale.set(0.5, 0.5, 0.5)
     vehicle.position.set(3, 0, -3)
+
     window.addEventListener("touchmove", (e) => {
         // ウィンドウの幅と高さを取得
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
-    
+
         // タッチ座標を取得
         const touchX = e.touches[0].clientX;
         const touchY = e.touches[0].clientY;
-    
+
         // 正規化された座標を計算
         const mobileX = (touchX / windowWidth) * 2 - 1;
         const mobileY = 1 - (touchY / windowHeight) * 2;
-    
+
         const mx: number = (mobileX * width / 2);
         const my: number = (-mobileY * height / 2) * 1.3
         target.position.set(mx, 0, my)
-        console.log(mx,my)
     });
-    useFrame((state, delta: number,events) => {
+
+    useFrame((state, delta: number) => {
 
         const vx: number = (state.pointer.x * width / 2)
         const vy: number = (-state.pointer.y * height / 2) * 1.3
+
         wheel_LRef.current?.lookAt(vx, 0, vy)
         wheel_RRef.current?.lookAt(vx, 0, vy)
 
-        if (vehicle.position.x < -30) {
-            target.position.set(0, 0, 0)
-        } else if (vehicle.position.x > 30) {
-            target.position.set(0, 0, 0)
-        } else if (vehicle.position.y > 30) {
-            target.position.set(0, 0, 0)
-        } else if (vehicle.position.y < -30) {
-            target.position.set(0, 0, 0)
-        } else {
+        addEventListener("mousemove",()=>{
             target.position.set(vx, 0, vy)
-        }
-        // target.position.set(vx, 0, vy)
-
+        })
+        
         entityManager.update(delta)
     })
 
