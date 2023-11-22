@@ -1,6 +1,4 @@
-"use client"
-
-import { Environment, OrbitControls, useTexture, useHelper, ContactShadows } from "@react-three/drei"
+import { OrbitControls, useTexture } from "@react-three/drei"
 import { useFrame, useLoader, useThree } from "@react-three/fiber"
 import { Fragment, useRef, useEffect } from "react"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"
@@ -9,14 +7,14 @@ import * as THREE from "three"
 import * as YUKA from "yuka"
 
 export default function Experience() {
-    const { scene, viewport, camera } = useThree()
+    const { viewport } = useThree()
 
     const width = viewport.width;
     const height = viewport.height;
     const aspectRatio = width / height
 
-    const level = useLoader(GLTFLoader, "/models/upbge-sample-level-01.glb")
-    const navMesh = useLoader(GLTFLoader, "/models/upbge-sample-level-01-navmesh.glb")
+    // const level = useLoader(GLTFLoader, "/models/upbge-sample-level-01.glb")
+    // const navMesh = useLoader(GLTFLoader, "/models/upbge-sample-level-01-navmesh.glb")
     const car = useLoader(GLTFLoader, "/models/car_sample_02.glb", loader => {
         const dracoLoader = new DRACOLoader()
         dracoLoader.setDecoderPath("/draco/")
@@ -41,7 +39,6 @@ export default function Experience() {
     // useHelper(spotRRef, THREE.SpotLightHelper, "#00ff00");
 
     useEffect(() => {
-        // pointRefが変更されたときに実行されるコード
         vehicle.setRenderComponent(groupRef.current, (entity: YUKA.GameEntity, renderComponent) => {
             renderComponent?.matrix.copy(entity.worldMatrix as any)
         })
@@ -50,7 +47,7 @@ export default function Experience() {
         })
         spotLRef.current.target = pointRef.current;
         spotRRef.current.target = pointRef.current;
-        
+
     }, [groupRef.current]);
 
     const vehicle = new YUKA.Vehicle();
@@ -64,12 +61,11 @@ export default function Experience() {
         renderComponent?.matrix.copy(entity.worldMatrix as any)
     })
 
-
     const entityManager = new YUKA.EntityManager();
     entityManager.add(vehicle);
     entityManager.add(target)
 
-    const arriveBehavior = new YUKA.ArriveBehavior(target.position, 2, 3);
+    const arriveBehavior = new YUKA.ArriveBehavior(target.position, 1, 3);
     vehicle.steering.add(arriveBehavior)
 
     vehicle.maxSpeed = 20
@@ -79,14 +75,21 @@ export default function Experience() {
     useFrame((state, delta: number) => {
         const vx: number = (state.mouse.x * width / 2)
         const vy: number = (-state.mouse.y * height / 2) * 1.3
-
-        const gx: number = (vx * Math.cos(-45 * Math.PI / 180)) - (vy * Math.sin(-45 * Math.PI / 180))
-        const gy: number = (vx * Math.sin(-45 * Math.PI / 180)) + (vy * Math.cos(-45 * Math.PI / 180))
-
         wheel_LRef.current?.lookAt(vx, 0, vy)
         wheel_RRef.current?.lookAt(vx, 0, vy)
 
-        target.position.set(vx, 0, vy)
+        if (vx < -30 && vy < -30) {
+            target.position.set(0, 0, 0)
+        } else if (vx > 30 && vy < -30) {
+            target.position.set(0, 0, 0)
+        } else if (vx < -30 && vy > 30) {
+            target.position.set(0, 0, 0)
+        } else if (vx > 30 && vy > 30) {
+            target.position.set(0, 0, 0)
+        } else {
+            target.position.set(vx, 0, vy)
+        }
+        // target.position.set(vx, 0, vy)
         entityManager.update(delta)
     })
 
@@ -146,7 +149,6 @@ export default function Experience() {
                 </mesh>
             </group>
 
-
             <mesh ref={targetRef} matrixAutoUpdate={false}>
                 <boxGeometry args={[1, 1, 1]} />
                 <meshStandardMaterial transparent opacity={0} />
@@ -155,7 +157,8 @@ export default function Experience() {
 
         {/* <mesh geometry={lineGeometry} material={lineMaterial} /> */}
         <ambientLight intensity={2} />
-        {/* <directionalLight position={[-5, 5, 5]} intensity={10}/> */}
+        {/* <directionalLight position={[-5, 5, 5]} intensity={1} color={"#F4E7A1"}/> */}
+        {/* <directionalLight position={[-5, 5, 5]} intensity={1} color={"#345A84"}/> */}
         {/* <OrbitControls /> */}
     </Fragment>)
 }
