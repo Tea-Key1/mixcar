@@ -1,11 +1,11 @@
 import { useTheme } from "next-themes";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 
 export default function Body({handleBodyUpdate}:any) {
     const { theme, setTheme } = useTheme();
     const handleThemeSwitch: any = () => {
         handleBodyUpdate(theme)
-        setTheme(theme === 'light' ? 'dark' : 'light')
+        setTheme(theme == 'light' ? 'dark' : 'light')
     }
     return (<Fragment>
         <div className="h-[100dvh] w-[100dvw]">

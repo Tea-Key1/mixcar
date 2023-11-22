@@ -86,21 +86,36 @@ export default function Experience() {
         const mobileY = 1 - (touchY / windowHeight) * 2;
 
         const mx: number = (mobileX * width / 2);
-        const my: number = (-mobileY * height / 2) * 1.3
+        const my: number = (-mobileY * height / 2) * 1.4
         target.position.set(mx, 0, my)
     });
 
+    addEventListener("mousemove",(e)=>{
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        const moveX = e.clientX;
+        const moveY = e.clientY;
+
+        const pcX = (moveX / windowWidth) * 2 - 1;
+        const pcY = 1 - (moveY / windowHeight) * 2;
+
+        const px: number = (pcX * width / 2);
+        const py: number = (-pcY * height / 2) * 1.4
+        target.position.set(px, 0, py)
+    })
+
     useFrame((state, delta: number) => {
 
-        const vx: number = (state.pointer.x * width / 2)
-        const vy: number = (-state.pointer.y * height / 2) * 1.3
+        // const vx: number = (state.pointer.x * width / 2)
+        // const vy: number = (-state.pointer.y * height / 2) * 1.3
 
-        wheel_LRef.current?.lookAt(vx, 0, vy)
-        wheel_RRef.current?.lookAt(vx, 0, vy)
+        // wheel_LRef.current?.lookAt(vx, 0, vy)
+        // wheel_RRef.current?.lookAt(vx, 0, vy)
 
-        addEventListener("mousemove",()=>{
-            target.position.set(vx, 0, vy)
-        })
+        // addEventListener("mousemove",()=>{
+        //     target.position.set(vx, 0, vy)
+        // })
         
         entityManager.update(delta)
     })
