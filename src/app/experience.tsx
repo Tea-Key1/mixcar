@@ -12,8 +12,6 @@ export default function Experience() {
     const height = viewport.height;
     const aspectRatio = width / height
 
-    console.log("rendering")
-
     // const level = useLoader(GLTFLoader, "/models/upbge-sample-level-01.glb")
     // const navMesh = useLoader(GLTFLoader, "/models/upbge-sample-level-01-navmesh.glb")
     const car = useLoader(GLTFLoader, "/models/car_sample_02.glb", loader => {
