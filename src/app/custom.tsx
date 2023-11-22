@@ -9,7 +9,6 @@ export default function Custom() {
     const handleBodyUpdate:any = (e:string) => {
       setPlaneKey(e != 'light' ? 'light' : 'dark');
     };
-    console.log(resolvedTheme)
     return (<Fragment>
         <Scroll html >
             <ThemeProvider attribute="class">
