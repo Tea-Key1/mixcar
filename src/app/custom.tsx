@@ -9,13 +9,14 @@ export default function Custom() {
     const handleBodyUpdate:any = (e:string) => {
       setPlaneKey(e != 'light' ? 'light' : 'dark');
     };
+    console.log(resolvedTheme)
     return (<Fragment>
         <Scroll html >
             <ThemeProvider attribute="class">
                 <Body handleBodyUpdate={handleBodyUpdate}/>
             </ThemeProvider>
         </Scroll>
-        {planeKey == "dark" ?
+        { resolvedTheme || planeKey == "dark" ?
             (<Fragment>
                 <mesh rotation-x={-45 * Math.PI / 2} scale={10}>
                     <planeGeometry args={[10, 10]} />
