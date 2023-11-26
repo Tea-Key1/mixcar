@@ -11,6 +11,7 @@ export default function Experience() {
     const width = viewport.width;
     const height = viewport.height;
     const aspectRatio = width / height
+    // console.log("rerendering")
 
     // const level = useLoader(GLTFLoader, "/models/upbge-sample-level-01.glb")
     // const navMesh = useLoader(GLTFLoader, "/models/upbge-sample-level-01-navmesh.glb")
