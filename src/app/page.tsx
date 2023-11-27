@@ -219,6 +219,13 @@ export default function App() {
         </div>
       </section>
     </div>
+    <div className="h-auto w-[100dvw] flex flex-col justify-items-center">
+      <div className="sm:text-3xl text-2xl font-medium title-font">
+        <div>提携業者</div>
+        <div className="border-b-4 rounded border-red-500 mx-auto w-[10dvw] mt-2"></div>
+      </div>
+      
+    </div>
     {/* <div className="h-auto w-[100dvw] flex justify-end">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta iste pariatur tempore, vitae nesciunt voluptate, debitis doloremque minus similique corrupti ullam modi, natus nihil accusantium dolorum fugiat placeat rem!</p>
     </div> */}
