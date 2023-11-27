@@ -4,41 +4,42 @@ import { motion } from "framer-motion";
 import Image from "next/image"
 import { useThree } from "@react-three/fiber";
 
+
 export default function Header() {
 
     const [width, setWidth] = useState(0);
     const [ themes, setThemes ] = useState("")
     const { theme, setTheme }:any = useTheme();
+    const [isOpen, setOpen] = useState(false);
     useEffect(() => {
         setWidth(window.innerWidth);
         setThemes(theme)
     }, []);
     
-    const handleThemeSwitch: any = () => {
+    const handleThemeSwitch= ():void => {
         setThemes(theme == 'light' ? 'dark' : 'light')
         setTheme(theme == 'light' ? 'dark' : 'light')
     }
-    const [isOpen, setOpen] = useState(false);
-    const handleMenuOpen: any = () => {
+    const handleMenuOpen = ():void => {
         setOpen(!isOpen)
     }
     return (<Fragment>
         <header className="h-[15dvh] w-full flex flex-wrap justify-items-center border-gray-200 dark:bg-gray-800 dark:bg-opacity-[0.5]">
             <nav className="h-full w-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-8 lg:px-6 py-2.5">
                 <a className="flex items-center">
-                    <Image alt="logo" src={"/textures/mixlogo.png"} height={Math.min(300, width/3)} width={Math.min(300, width/3)} />
+                    <Image alt="logo" src={"/textures/mixlogo.png"} className="w-[30dvw] lg:w-[15dvw]" height={1000} width={1000} />
                 </a>
                 <div className="flex items-center lg:order-2">
                     <label className='themeSwitcherTwo relative inline-flex cursor-pointer select-none items-center'>
                         <span className='label flex items-center text-sm font-medium dark:text-gray-100'>
-                            <Image alt='image' src={"/textures/light.svg"} height={Math.min(width * 3, 30)} width={Math.min(width * 3, 30)} />
+                            <Image alt='image' src={"/textures/light.svg"} className="w-[8dvw] sm:w-[2dvw]" height={1} width={1} />
                         </span>
 
                         <button onClick={handleThemeSwitch} className={`slider mx-4 flex h-5 md:h-8 w-[40px] md:w-[60px] items-center rounded-full p-1 duration-200 ${themes == "dark" ? 'bg-[#212b36]' : 'bg-[#CCCCCE]'}`}>
                             <span className={`dot h-4 md:h-6 w-4 md:w-6 rounded-full bg-white duration-200 ${themes == "dark" ? 'translate-x-[18px] md:translate-x-[28px]' : ''}`}></span>
                         </button>
                         <span className='label flex items-center text-sm font-medium dark:text-gray-100'>
-                            <Image alt='image' src={"/textures/dark.svg"} height={Math.min(width * 3, 30)} width={Math.min(width * 3, 30)} />
+                            <Image alt='image' src={"/textures/dark.svg"} className="w-[8dvw] sm:w-[2dvw]" height={1} width={1} />
                         </span>
                     </label>
 
@@ -50,19 +51,22 @@ export default function Header() {
                 <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">Company</a>
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">ホーム</a>
                         </li>
                         <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">Marketplace</a>
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">MiX保証</a>
                         </li>
                         <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">Features</a>
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">自社ローン</a>
                         </li>
                         <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">Team</a>
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">コーティング</a>
                         </li>
                         <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">Contact</a>
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">お知らせ</a>
+                        </li>
+                        <li className="">
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">お問い合わせ</a>
                         </li>
                     </ul>
                 </div>
@@ -78,10 +82,12 @@ export default function Header() {
                 className="absolute right-0 top-[10dvh] h-[40dvh] w-[30dvw] bg-white shadow-4xl p-5 pt-0 border-2 border-gray-200"
             >
                 <div className="w-full h-full flex flex-col justify-around items-center">
-                    <div className="text-black">first</div>
-                    <div className="text-black">second</div>
-                    <div className="text-black">third</div>
-                    <div className="text-black">forth</div>
+                    <div className="text-black text-xs sm:text-base">first</div>
+                    <div className="text-black text-xs sm:text-base">second</div>
+                    <div className="text-black text-xs sm:text-base">third</div>
+                    <div className="text-black text-xs sm:text-base">forth</div>
+                    <div className="text-black text-xs sm:text-base">fifth</div>
+                    <div className="text-black text-xs sm:text-base">sixth</div>
                 </div>
             </motion.div>
         ) : null}
