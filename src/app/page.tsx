@@ -229,50 +229,88 @@ export default function App() {
     <div className="h-auto w-[100dvh]">
       <section className=" py-32 min-h-screen">
         <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-          <h2 className="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">Frequently Asked Questions</h2>
+          <h2 className="mb-12 text-2xl font-bold leadi text-center sm:text-3xl">Frequently Asked Questions</h2>
           <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">How can I place an order?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">MiX保証は何度でも受けられるの?</summary>
               <div className="px-4 pb-4">
-                <p>You can easily place an order on our website by browsing our product catalog, selecting the items you want, and adding them to your cart. Then, proceed to checkout, where you can provide your shipping and payment information to complete the order.</p>
+                <p>年1回受けることができます。但し、お客様ご自身で日頃のメンテナンスや定期点検を行っていただくことが条件です。メンテナンスをしていても発生してしまう故障が保証の対象になります。</p>
               </div>
             </details>
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">What payment methods do you accept?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">本当にMiX保証なんか必要なの?</summary>
               <div className="px-4 pb-4">
-                <p>We accept various payment methods, including credit cards, debit cards, net banking, and mobile wallet payments. You can choose the payment option that is most convenient for you during the checkout process.</p>
+                <p>中古車、特に輸入車は残念ながら故障の頻度は高いです。強制とは言いませんが、絶対にMiX保証には入っておいた方がお得です。</p>
               </div>
             </details>
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">How long does shipping take?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">故障した時には最初にどうすればいいの？</summary>
               <div className="px-4 pb-4">
-                <p>Shipping times may vary depending on your location and the shipping method chosen. Typically, orders are processed within 1-2 business days, and delivery can take 3-7 business days within India. You will receive a tracking notification once your order is shipped.</p>
+                <div>まずは、下記記載のカスタマーサポート(修理受付窓口)まで電話またはLINEにてご連絡ください。<br />
+                  <span className="font-bold">TEL 080-8150-0716</span>
+                  <Image className="object-cover object-center my-2" src={"/textures/qecd-150x150.jpg"} alt="content" width={1000} height={1000} />
+                  状況に応じて担当者が丁寧にご説明いたします。緊急の場合で、当社休業日あるいは営業時間外のためカスタマーサポートに繋がらない場合は、お客様がご加入されている自動車保険会社の事故・故障連絡先へお電話していただき、お車の『一時預かり』を依頼してください。翌日、カスタマーサポートへご連絡をお願いします。
+                </div>
               </div>
             </details>
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">Can I return a product if I'm not satisfied?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">保証が適用されない保険もあるの?</summary>
               <div className="px-4 pb-4">
-                <p>Yes, we have a hassle-free return policy. If you are not satisfied with your purchase, you can initiate a return within 30 days of receiving the product. Please contact our customer support at <a href="" className="underline">example@gmail.com</a> for assistance.</p>
+                <p>申し訳ありませんが、お客様が、レッカー会社、修理工場、レンタカー会社を選べない保険では保証は適用されません。</p>
               </div>
             </details>
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">Do you offer international shipping?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">事故の場合は使えないの?</summary>
               <div className="px-4 pb-4">
-                <p>Currently, we only provide shipping services within India. However, we may consider expanding our shipping options to international locations in the future. Please stay updated with our website for any changes in shipping destinations.</p>
+                <p>走行不能な状態が対象になります。事前に担当者にご相談ください。</p>
               </div>
             </details>
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">What is your customer support contact?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">走行不能状態とは?</summary>
               <div className="px-4 pb-4">
-                <p>If you have any questions, concerns, or need assistance, you can reach our customer support team at 9911083755 during our business hours, Monday to Saturday from 10 am to 6 pm. You can also contact us via email at <a href="" className="underline">example@gmail.com</a>.</p>
+                <p>お車が動かなくなった状態、または法令等により走行してはいけない状態をいいます。</p>
               </div>
             </details>
             <details>
-              <summary className="py-2 outline-none cursor-pointer focus:underline">What are your terms and conditions?</summary>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">板金修理の条件は?</summary>
               <div className="px-4 pb-4">
-                <p>You can find our detailed terms and conditions by visiting our
-                  <a href="" className="underline">Terms of Service</a>
-                  page on our website. It includes information about our policies, user guidelines, and more.</p>
+                <p>お客様がご加入中の自動車保険に設定されているレンタカー日額が２万円の場合で、かつ走行に支障がある事故や故障で生じた板金修理が対象です。但し、金額の上限がありますので、程度によっては全てが保証の対象にならない場合があります。その場合は担当者よりご案内させていただきます。</p>
+              </div>
+            </details>
+            <details>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">修理工場が遠いのが不便にならないかな?</summary>
+              <div className="px-4 pb-4">
+                <p>レッカーにレンタカーを積んで、お客様の車両保管場所までお車を引き取りいきますのでご安心ください。修理期間中は、貸出しするレンタカーをご利用ください。</p>
+              </div>
+            </details>
+            <details>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">保証期間中に車を買い替えたらどうなるの?</summary>
+              <div className="px-4 pb-4">
+                <p>保証期間内であれば継続可能です。また、他店で買い替えされた場合でも、条件はありますが継続可能です。</p>
+              </div>
+            </details>
+            <details>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">他店で車を購入したけど、MiX保証に入れるの?</summary>
+              <div className="px-4 pb-4">
+                <p>お車の状態など点検させていただくなど、条件はありますが、ご加入可能です。</p>
+              </div>
+            </details>
+            <details>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">家族の車も保証に入れるの?</summary>
+              <div className="px-4 pb-4">
+                <p>ご家族のお車でも、ご自身のセカンドカーでも、条件はありますがMiX保証にご加入可能です。</p>
+              </div>
+            </details>
+            <details>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">車を手放すことにしたけど、買い取ってもらえるの?</summary>
+              <div className="px-4 pb-4">
+                <p>MiXでは他の買取店の見積金額よりも高く買い取らせて頂いています。</p>
+              </div>
+            </details>
+            <details>
+              <summary className="py-2 outline-none cursor-pointer focus:underline">消耗品やナビなどは保証されるの?</summary>
+              <div className="px-4 pb-4">
+                <p>対象外です。MiX保証では、走行に支障がある故障、事故の修理が対象です。</p>
               </div>
             </details>
           </div>
