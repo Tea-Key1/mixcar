@@ -14,7 +14,7 @@ export default function Header() {
     useEffect(() => {
         setWidth(window.innerWidth);
         setThemes(theme)
-    }, []);
+    }, [theme]);
     
     const handleThemeSwitch= ():void => {
         setThemes(theme == 'light' ? 'dark' : 'light')

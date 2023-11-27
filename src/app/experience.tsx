@@ -38,6 +38,9 @@ export default function Experience() {
     // useHelper(spotLRef, THREE.SpotLightHelper, "#ff0000");
     // useHelper(spotRRef, THREE.SpotLightHelper, "#00ff00");
 
+    const vehicle = new YUKA.Vehicle();
+    const target = new YUKA.GameEntity()
+
     useEffect(() => {
         vehicle.setRenderComponent(groupRef.current, (entity: YUKA.GameEntity, renderComponent) => {
             renderComponent?.matrix.copy(entity.worldMatrix as any)
@@ -48,10 +51,9 @@ export default function Experience() {
         spotLRef.current.target = pointRef.current;
         spotRRef.current.target = pointRef.current;
 
-    }, [groupRef.current]);
+    }, [target, vehicle]);
 
-    const vehicle = new YUKA.Vehicle();
-    const target = new YUKA.GameEntity()
+
 
 
     vehicle.setRenderComponent(groupRef.current, (entity: YUKA.GameEntity, renderComponent) => {

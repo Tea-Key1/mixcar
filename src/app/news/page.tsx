@@ -1,6 +1,7 @@
 "use client"
 import { Fragment, useState, useEffect, Suspense } from "react";
 import { client } from "../../../libs/contentfulClient";
+import { loadPosts } from "../blog";
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { ThemeProvider } from "next-themes";
@@ -10,12 +11,6 @@ import Experience from "../experience";
 import Header from "../header";
 import Footer from "../footer";
 
-export const loadPosts = async () => {
-    const res = await client.getEntries({
-        content_type: "mixcar"
-    })
-    return res.items
-}
 
 export default function News() {
     const [items, setItems] = useState([])
@@ -56,29 +51,46 @@ export default function News() {
             <ThemeProvider attribute="class">
                 <Header />
             </ThemeProvider>
-            <div className="h-auto w-full flex justify-center p-[5dvw]">
-                <section className="flex flex-col max-w-screen-xl justify-around gap-6 sm:gap-10 md:gap-16 lg:flex-row">
-
-                    <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-                        <p className="mb-4 font-semibold text-indigo-500 dark:text-indigo-300 md:mb-6 text-xs sm:text-base">一人でも多くの方に、安心な中古輸入車をお届けしたい。</p>
-
-                        <h1 className="mb-8 font-bold md:mb-12 text-xs sm:text-base">従来の中古車では、高額な保証システムに入らない限り故障に対する安心を手に入れる事はできませんでした。MiXでは独自の保証システムをリーズナブルな価格で、お車の安心をお届けしています。</h1>
-
-                        <p className="mb-8 leading-relaxed  md:mb-12 lg:w-4/5 text-xs sm:text-base">保証システムをご提供するために、業界オークションから良質な中古車を仕入れ、納車前の点検整備を徹底しています。さらに内外装の仕上げをしっかりした上で、リーズナブルな価格で販売しています。</p>
-
-                        <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-                            <a href="#" className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">中古車を見る</a>
-
-                            <a href="#" className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-700 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">MiX保証を見る</a>
-                        </div>
-                    </div>
-
-                    <div className="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12" >
-                        <Image loading="lazy" priority={false} src={"/textures/camera_car_road_mazda_travel_fun_drive_view-624222.jpg"} alt="Photo by Fakurian Design" className="h-full w-full object-cover object-center " width={1000} height={1000} />
-                    </div>
-                </section>
-            </div>
         </div>
+        <section className="text-gray-600 body-font overflow-hidden">
+            <div className="container p-24 mx-auto">
+                <div className="-my-8 divide-y-2 divide-gray-100 border-y-2">
+                    {items.map((item: any) =>
+                        <div key={item.sys.id} className="py-8 flex flex-wrap md:flex-nowrap">
+                            <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                <span className="mt-1 text-gray-500 text-sm">{item.fields.date}</span>
+                            </div>
+                            <div className="md:flex-grow">
+                                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">{item.fields.title}</h2>
+                                <p className="leading-relaxed line-clamp-2">{item.fields.body}</p>
+                                <a className="text-blue-500 inline-flex items-center mt-4">Learn More
+                                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    )}
+                    {/* <div className="py-8 flex flex-wrap md:flex-nowrap">
+                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span className="font-semibold title-font text-gray-700">CATEGORY</span>
+                            <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                        </div>
+                        <div className="md:flex-grow">
+                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
+                            <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+                            <a className="text-blue-500 inline-flex items-center mt-4">Learn More
+                                <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div> */}
+                </div>
+            </div>
+        </section>
         <Footer />
     </Fragment>)
 }
