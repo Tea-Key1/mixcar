@@ -226,14 +226,14 @@ export default function App() {
       </div>
 
     </div>
-    <div className="h-auto w-[100dvh]">
-      <section className=" py-32 min-h-screen">
-        <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-          <h2 className="mb-12 text-2xl font-bold leadi text-center sm:text-3xl">Frequently Asked Questions</h2>
-          <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+    <div className="h-auto w-[100dvw] flex flex-col justify-center items-center">
+      <section className="w-[80dvw] py-32 mx-auto">
+        <div className="w-full container flex flex-col justify-center p-4 mx-auto md:p-8">
+          <h2 className="w-full mb-12 text-2xl font-bold text-center sm:text-3xl">よくある質問</h2>
+          <div className="w-full flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
             <details>
               <summary className="py-2 outline-none cursor-pointer focus:underline">MiX保証は何度でも受けられるの?</summary>
-              <div className="px-4 pb-4">
+              <div className="px-4 pb-4 text-xs sm:text-base">
                 <p>年1回受けることができます。但し、お客様ご自身で日頃のメンテナンスや定期点検を行っていただくことが条件です。メンテナンスをしていても発生してしまう故障が保証の対象になります。</p>
               </div>
             </details>
@@ -248,7 +248,7 @@ export default function App() {
               <div className="px-4 pb-4">
                 <div>まずは、下記記載のカスタマーサポート(修理受付窓口)まで電話またはLINEにてご連絡ください。<br />
                   <span className="font-bold">TEL 080-8150-0716</span>
-                  <Image className="object-cover object-center my-2" src={"/textures/qecd-150x150.jpg"} alt="content" width={1000} height={1000} />
+                  <Image className="object-cover object-center my-2 w-[30dvw]" src={"/textures/qecd-150x150.jpg"} alt="content" width={1000} height={1000} />
                   状況に応じて担当者が丁寧にご説明いたします。緊急の場合で、当社休業日あるいは営業時間外のためカスタマーサポートに繋がらない場合は、お客様がご加入されている自動車保険会社の事故・故障連絡先へお電話していただき、お車の『一時預かり』を依頼してください。翌日、カスタマーサポートへご連絡をお願いします。
                 </div>
               </div>

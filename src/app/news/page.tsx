@@ -53,7 +53,7 @@ export default function News() {
             </ThemeProvider>
         </div>
         <section className="text-gray-600 body-font overflow-hidden">
-            <div className="container p-24 mx-auto">
+            <div className="container px-5 py-10 mx-auto">
                 <div className="-my-8 divide-y-2 divide-gray-100 border-y-2">
                     {items.map((item: any) =>
                         <div key={item.sys.id} className="py-8 flex flex-wrap md:flex-nowrap">
@@ -62,13 +62,7 @@ export default function News() {
                             </div>
                             <div className="md:flex-grow">
                                 <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">{item.fields.title}</h2>
-                                <p className="leading-relaxed line-clamp-2">{item.fields.body}</p>
-                                <a className="text-blue-500 inline-flex items-center mt-4">Learn More
-                                    <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
+                                <p className="leading-relaxed ">{item.fields.body}</p>
                             </div>
                         </div>
                     )}
