@@ -50,23 +50,23 @@ export default function Header() {
                 </div>
                 <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">ホーム</a>
+                        <li className="hover:translate-y-[-0.25dvh] duration-100">
+                            <a href="/" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">ホーム</a>
                         </li>
-                        <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">MiX保証</a>
+                        <li className="hover:translate-y-[-0.25dvh] duration-100">
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">MiX保証</a>
                         </li>
-                        <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">自社ローン</a>
+                        <li className="hover:translate-y-[-0.25dvh] duration-100">
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">自社ローン</a>
                         </li>
-                        <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">コーティング</a>
+                        <li className="hover:translate-y-[-0.25dvh] duration-100">
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">コーティング</a>
                         </li>
-                        <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">お知らせ</a>
+                        <li className="hover:translate-y-[-0.25dvh] duration-100">
+                            <a href="/news" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">お知らせ</a>
                         </li>
-                        <li className="">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white hover:border-b-2 border-gray-500 duration-100">お問い合わせ</a>
+                        <li className="hover:translate-y-[-0.25dvh] duration-100">
+                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">お問い合わせ</a>
                         </li>
                     </ul>
                 </div>
@@ -82,12 +82,12 @@ export default function Header() {
                 className="absolute right-0 top-[10dvh] h-[40dvh] w-[30dvw] bg-white shadow-4xl p-5 pt-0 border-2 border-gray-200"
             >
                 <div className="w-full h-full flex flex-col justify-around items-center">
-                    <div className="text-black text-xs sm:text-base">first</div>
-                    <div className="text-black text-xs sm:text-base">second</div>
-                    <div className="text-black text-xs sm:text-base">third</div>
-                    <div className="text-black text-xs sm:text-base">forth</div>
-                    <div className="text-black text-xs sm:text-base">fifth</div>
-                    <div className="text-black text-xs sm:text-base">sixth</div>
+                    <a href="/" className="text-black text-xs sm:text-base">ホーム</a>
+                    <a className="text-black text-xs sm:text-base">MiX保証</a>
+                    <a className="text-black text-xs sm:text-base">自社ローン</a>
+                    <a className="text-black text-xs sm:text-base">コーティング</a>
+                    <a href="/news" className="text-black text-xs sm:text-base">お知らせ</a>
+                    <a className="text-black text-xs sm:text-base">お問い合わせ</a>
                 </div>
             </motion.div>
         ) : null}

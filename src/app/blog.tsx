@@ -13,10 +13,10 @@ export default function Blog() {
     useEffect(() => {
         (async () => {
             let posts: any = await loadPosts()
-            setItems(posts)
+            setItems(posts.slice(0, 3))
         })()
     }, [])
-    console.log(items)
+    // console.log(items)
     return (<Fragment>
         <section className="text-gray-600 body-font overflow-hidden">
             <div className="container p-24 mx-auto">

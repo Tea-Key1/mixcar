@@ -9,6 +9,7 @@ import Header from "./header"
 import { motion } from "framer-motion"
 import Plane from "./plane"
 import Blog from "./blog"
+import Footer from "./footer"
 
 
 export default function App() {
@@ -61,8 +62,13 @@ export default function App() {
           </div>
 
           <div className="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
-            <Image loading="lazy" priority={false} src={"/textures/camera_car_road_mazda_travel_fun_drive_view-624222.jpg"} alt="Photo by Fakurian Design" className="h-full w-full object-cover object-center " width={1000} height={1000} />
+            <Image loading="lazy" priority={false} src={"/textures/camera_car_road_mazda_travel_fun_drive_view-624222.jpg"} alt="Photo by Fakurian Design" className="h-full w-full object-cover object-center block" width={1000} height={1000} />
+
           </div>
+          {/* <div className="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12" >
+            <Image loading="lazy" priority={false} src={"/textures/pexels-kaboompics-com-6003.jpg"} alt="Photo by Fakurian Design" className="h-full w-full object-cover object-center " width={1000} height={1000} />
+          </div> */}
+
         </section>
       </div>
     </div>
@@ -122,11 +128,30 @@ export default function App() {
       <Image className="w-[70dvw] lg:w-[50dvw] rounded-md object-cover object-center mb-6 mx-auto" src={"/textures/bg_img001.jpg"} alt="content" width={1000} height={1000} />
     </div>
     <div className="h-auto w-[100dvw]">
+      <section>
+        <div className=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="flex flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
+            <div className="w-full mx-auto">
+              <p className="text-2xl font-bold">A small headline to switch your visitors into users.</p>
+              <p>Right. Say that again. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking.</p>
+              <ol>
+                <li>Expensive feature.</li>
+                <li>Expensive feature.</li>
+                <li>Expensive feature.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div className="h-auto w-[100dvw]">
       <section className=" body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <p className="sm:text-3xl text-2xl font-medium title-font">MiXについて</p>
-
+            <div className="sm:text-3xl text-2xl font-medium title-font">
+              <span>MiXについて</span>
+              <div className="border-b-4 rounded border-red-500 mx-auto w-[10dvw] mt-2"></div>
+            </div>
 
           </div>
           <div className="flex flex-wrap -m-4">
@@ -246,42 +271,7 @@ export default function App() {
       </section>
     </div>
     <div className="h-auto w-[100dvw]">
-      <footer className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            <a className="flex justify-items-center text-gray-900">
-              <Image alt="logo" src={"/textures/mixlogo.png"} className="w-[30dvw] sm:w-[15dvw] object-cover object-center mx-auto" height={1000} width={1000} />
-            </a>
-            <p className="mt-2 text-sm text-gray-500">MiX保証に関するお問合せは 0465-46-7369 へお掛けください。</p>
-          </div>
-          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <p className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">ホーム</p>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <p className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">MiX保証</p>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <p className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">自社ローン</p>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <p className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">コーティング</p>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <p className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">お知らせ</p>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <p className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">お問い合わせ</p>
-            </div>
-          </div>
-        </div>
-        <div className="bg-gray-100">
-          <div className="container mx-auto py-4 px-5 flex flex-wrap justify-end flex-col sm:flex-row">
-            <p className="text-gray-500 text-sm text-center sm:text-left">Copyright © 合同会社MiX All Rights Reserved.【掲載の記事・写真・イラストなどの無断複写・転載等を禁じます】
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   </Fragment>)
 }
