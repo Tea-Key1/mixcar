@@ -18,7 +18,6 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
-        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       </body>
     </html>
   )

@@ -132,13 +132,25 @@ export default function App() {
         <div className=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
             <div className="w-full mx-auto">
-              <p className="text-2xl font-bold">A small headline to switch your visitors into users.</p>
-              <p>Right. Say that again. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking.</p>
+              <p className="sm:text-3xl text-2xl font-medium title-font mb-5">お客様の声</p>
               <ol>
-                <li>Expensive feature.</li>
-                <li>Expensive feature.</li>
-                <li>Expensive feature.</li>
+                <li className="sm:text-md text-xl mb-2 p-5 bg-red-300 bg-opacity-25 rounded-md">お客様一人目の声
+                  <Image className="rounded object-cover object-center mb-6" src={"/textures/comment001.jpg"} alt="content" width={1000} height={1000} />
+                </li>
+                <li className="sm:text-md text-xl mb-2 p-5 bg-red-300 bg-opacity-25 rounded-md">お客様二人目の声
+                  <Image className="rounded object-cover object-center mb-6" src={"/textures/comment002.jpg"} alt="content" width={1000} height={1000} />
+                </li>
+                <li className="sm:text-md text-xl mb-2 p-5 bg-red-300 bg-opacity-25 rounded-md">お客様三人目の声
+                  <Image className="rounded object-cover object-center mb-6" src={"/textures/comment003.jpg"} alt="content" width={1000} height={1000} />
+                </li>
+                <li className="sm:text-md text-xl mb-2 p-5 bg-red-300 bg-opacity-25 rounded-md">お客様四人目の声
+                  <Image className="rounded object-cover object-center mb-6" src={"/textures/comment004.jpg"} alt="content" width={1000} height={1000} />
+                </li>
+                <li className="sm:text-md text-xl mb-2 p-5 bg-red-300 bg-opacity-25 rounded-md">お客様五人目の声
+                  <Image className="rounded object-cover object-center mb-6" src={"/textures/comment005.jpg"} alt="content" width={1000} height={1000} />
+                </li>
               </ol>
+              <p className="sm:text-md text-xl font-medium title-font my-2">◆MiX保証を経験されたお客様から頂戴した口コミの一部を掲載させて頂いています。その他にも多数の口コミを頂戴しており、詳しくはカーセンサーの口コミをご確認ください。</p>
             </div>
           </div>
         </div>
@@ -152,7 +164,40 @@ export default function App() {
               <span>MiXについて</span>
               <div className="border-b-4 rounded border-red-500 mx-auto w-[10dvw] mt-2"></div>
             </div>
+            <div className="bg-white py-6 sm:py-8 lg:py-12">
+              <div className="mx-auto max-w-screen-lg px-4 md:px-8">
+                <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">代表挨拶</h1>
 
+                <p className="mb-6 text-gray-500 text-left sm:text-lg md:mb-2">
+                  私たちMiXは、お客様に出来る限り満足していただくと言う「おもてなし」の気持ちを基本として「安さ」「高品質」「スピード」「安心」を徹底的に追及しています。ご購入に際しては、ネットに掲載されている車両以外でもお客様の希望に沿った車両を一緒にお探しさせて頂いたり、お客様に安心したカーライフを送っていただくために、いかなる車種でも加入していただく事ができるオリジナルの保証システム「MiX保証」を提供させて頂いています。
+                </p>
+                <p className="mb-6 text-gray-500 text-left sm:text-lg md:mb-2 font-bold">
+                  MiX保証について
+                </p>
+                <p className="mb-6 text-gray-500 text-left sm:text-lg md:mb-2">
+                  「中古車ですから、故障するのは仕方ありません。」<br />よく聞く言葉です。その通りかも知れませんが、販売した後の故障は、購入した側が嫌な思いをするだけでなく、販売した側も何とも申し訳ない気持ちになるのも事実です。この保証システムを構築、販売する以前は、我々も幾度となくそう言う思いをしてきました。
+                  <br />
+                  車両販売後も双方が気持ちよい関係を続けられるのにはどうしたら良いのか?試行錯誤を繰り返し、作り上げられてきたのが、「MiX保証」です。今後も改良を積み重ね、更なる内容の充実を目指していきます。
+                </p>
+                <p className="mb-6 text-gray-500 text-left sm:text-lg md:mb-8 font-bold">
+                  代表 佐藤 隆二
+                </p>
+
+                <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">経営理念</h2>
+
+                <ul className="mb-6 list-inside list-disc text-gray-500 sm:text-lg md:mb-8">
+                  <li>This is a section of some simple filler text</li>
+                  <li>Also known as placeholder text</li>
+                  <li>It shares some characteristics of a real written text</li>
+                </ul>
+
+                <blockquote className="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6">“This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.”</blockquote>
+
+                <h2 className="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">Features</h2>
+
+                <p className="text-gray-500 sm:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing. Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+              </div>
+            </div>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2 lg:w-1/3">
@@ -273,5 +318,6 @@ export default function App() {
     <div className="h-auto w-[100dvw]">
       <Footer />
     </div>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   </Fragment>)
 }
