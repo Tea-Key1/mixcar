@@ -65,9 +65,6 @@ export default function Header() {
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
                             <a href="/news" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">お知らせ</a>
                         </li>
-                        <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">お問い合わせ</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
@@ -87,7 +84,6 @@ export default function Header() {
                     <a href="/loan" className="text-black text-xs sm:text-base">自社ローン</a>
                     <a href="/coding" className="text-black text-xs sm:text-base">コーティング</a>
                     <a href="/news" className="text-black text-xs sm:text-base">お知らせ</a>
-                    <a className="text-black text-xs sm:text-base">お問い合わせ</a>
                 </div>
             </motion.div>
         ) : null}

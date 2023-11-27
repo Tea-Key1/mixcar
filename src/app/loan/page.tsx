@@ -33,8 +33,6 @@ export default function Loan(){
                 </Canvas>
             </Suspense>
 
-
-
         </motion.div>
         <div className="h-auto w-[100dvw]">
             <ThemeProvider attribute="class">

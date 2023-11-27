@@ -27,9 +27,6 @@ export default function Footer() {
                     <a href="/news" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
                         <p className="title-font font-medium tracking-widest text-sm mb-3">お知らせ</p>
                     </a>
-                    <a href="" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
-                        <p className="title-font font-medium tracking-widest text-sm mb-3">お問い合わせ</p>
-                    </a>
                 </div>
             </div>
             <div className="bg-gray-100">
