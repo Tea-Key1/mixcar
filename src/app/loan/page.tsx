@@ -1,5 +1,4 @@
 "use client"
-
 import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import { ThemeProvider } from "next-themes";

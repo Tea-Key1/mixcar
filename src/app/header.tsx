@@ -26,7 +26,7 @@ export default function Header() {
     return (<Fragment>
         <header className="h-[15dvh] w-full flex flex-wrap justify-items-center border-gray-200 dark:bg-gray-800 dark:bg-opacity-[0.5]">
             <nav className="h-full w-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-8 lg:px-6 py-2.5">
-                <a className="flex items-center">
+                <a href="/" className="flex items-center">
                     <Image alt="logo" src={"/textures/mixlogo.png"} className="w-[30dvw] lg:w-[15dvw]" height={1000} width={1000} />
                 </a>
                 <div className="flex items-center lg:order-2">
@@ -54,13 +54,13 @@ export default function Header() {
                             <a href="/" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">ホーム</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">MiX保証</a>
+                            <a href="/guarantee" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">MiX保証</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">自社ローン</a>
+                            <a href="/loan" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">自社ローン</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="#" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">コーティング</a>
+                            <a href="/coding" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">コーティング</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
                             <a href="/news" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">お知らせ</a>
@@ -83,9 +83,9 @@ export default function Header() {
             >
                 <div className="w-full h-full flex flex-col justify-around items-center">
                     <a href="/" className="text-black text-xs sm:text-base">ホーム</a>
-                    <a className="text-black text-xs sm:text-base">MiX保証</a>
-                    <a className="text-black text-xs sm:text-base">自社ローン</a>
-                    <a className="text-black text-xs sm:text-base">コーティング</a>
+                    <a href="/guarantee" className="text-black text-xs sm:text-base">MiX保証</a>
+                    <a href="/loan" className="text-black text-xs sm:text-base">自社ローン</a>
+                    <a href="/coding" className="text-black text-xs sm:text-base">コーティング</a>
                     <a href="/news" className="text-black text-xs sm:text-base">お知らせ</a>
                     <a className="text-black text-xs sm:text-base">お問い合わせ</a>
                 </div>

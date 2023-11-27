@@ -29,7 +29,7 @@ export default function Blog() {
                             <div className="md:flex-grow">
                                 <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">{item.fields.title}</h2>
                                 <p className="leading-relaxed line-clamp-2">{item.fields.body}</p>
-                                <a className="text-blue-500 inline-flex items-center mt-4">Learn More
+                                <a href="/news" className="text-blue-500 inline-flex items-center mt-4">Learn More
                                     <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>

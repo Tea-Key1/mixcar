@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="body-font">
             <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                    <a className="flex justify-items-center ">
+                    <a href="/" className="flex justify-items-center ">
                         <Image alt="logo" src={"/textures/mixlogo.png"} className="w-[30dvw] sm:w-[15dvw] object-cover object-center mx-auto" height={1000} width={1000} />
                     </a>
                     <p className="mt-2 text-sm ">MiX保証に関するお問合せは 0465-46-7369 へお掛けください。</p>
@@ -15,13 +15,13 @@ export default function Footer() {
                     <a href="/" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
                         <p className="title-font font-medium tracking-widest text-sm mb-3">ホーム</p>
                     </a>
-                    <a href="" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
+                    <a href="/guarantee" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
                         <p className="title-font font-medium tracking-widest text-sm mb-3">MiX保証</p>
                     </a>
-                    <a href="" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
+                    <a href="/loan" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
                         <p className="title-font font-medium tracking-widest text-sm mb-3">自社ローン</p>
                     </a>
-                    <a href="" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
+                    <a href="/coding" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
                         <p className="title-font font-medium tracking-widest text-sm mb-3">コーティング</p>
                     </a>
                     <a href="/news" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">

@@ -55,7 +55,7 @@ export default function App() {
             <p className="mb-8 leading-relaxed  md:mb-12 lg:w-4/5 text-xs sm:text-base">保証システムをご提供するために、業界オークションから良質な中古車を仕入れ、納車前の点検整備を徹底しています。さらに内外装の仕上げをしっかりした上で、リーズナブルな価格で販売しています。</p>
 
             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-              <a href="#" className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">中古車を見る</a>
+              <a href="https://www.carsensor.net/shop/kanagawa/322999001/stocklist/" className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">中古車を見る</a>
 
               <a href="#" className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-700 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">MiX保証を見る</a>
             </div>
@@ -164,7 +164,7 @@ export default function App() {
               <span>MiXについて</span>
               <div className="border-b-4 rounded border-red-500 mx-auto w-[10dvw] mt-2"></div>
             </div>
-            <div className="bg-white py-6 sm:py-8 lg:py-12">
+            <div className=" py-6 sm:py-8 lg:py-12">
               <div className="mx-auto max-w-screen-lg px-4 md:px-8">
                 <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">代表挨拶</h1>
 
@@ -185,17 +185,35 @@ export default function App() {
 
                 <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">経営理念</h2>
 
-                <ul className="mb-6 list-inside list-disc text-gray-500 sm:text-lg md:mb-8">
-                  <li>This is a section of some simple filler text</li>
-                  <li>Also known as placeholder text</li>
-                  <li>It shares some characteristics of a real written text</li>
+                <ul className="mb-6 list-inside list-disc text-left text-gray-500 sm:text-lg md:mb-8">
+                  <li className=" text-md font-semibold">Mission ミッション(社会的使命)</li>
+                  <p className=" text-gray-500 text-left sm:text-lg md:mb-2">
+                    仲間（ファミリー）の絆を大切にし、コミュニティーの力で、新しい時代を切り開く一大経済圏を創出する。
+                  </p>
+                  <li className=" text-md font-semibold">Vision ビジョン(未来像)</li>
+                  <p className=" text-gray-500 text-left sm:text-lg md:mb-2">
+                    世界の全ての人々の豊かさと健康と幸せを実現する
+                  </p>
+                  <li className=" text-md font-semibold">Values バリュー(価値観・行動指針)</li>
+                  <p className=" text-gray-500 text-left sm:text-lg md:mb-2">
+                    お客様を大事にする。<br />
+                    常に感謝の気持ちを忘れない。<br />
+                    倫理、道徳を重んじる。<br />
+                    公平、公正であり続ける。<br />
+                    常に最善を尽くす。<br />
+                    常識と過去にとらわれない。<br />
+                    工夫と改善を怠らない。<br />
+                    忘れをなくす。<br />
+                  </p>
+                  <li className=" text-md font-semibold">Strategy ビジョン実現のための戦略</li>
+                  <p className=" text-gray-500 text-left sm:text-lg md:mb-2">
+                    コミュニティーの基礎となる会員システムを構築する。<br />
+                    会員同士の共助の仕組みを構築する。<br />
+                    会員同士の経済的交流の仕組みを構築する。<br />
+                    オンラインとリアルを融合する。<br />
+                  </p>
                 </ul>
 
-                <blockquote className="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6">“This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.”</blockquote>
-
-                <h2 className="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">Features</h2>
-
-                <p className="text-gray-500 sm:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing. Filler text is dummy text which has no meaning however looks very similar to real text.</p>
               </div>
             </div>
           </div>
@@ -219,13 +237,14 @@ export default function App() {
         </div>
       </section>
     </div>
-    <div className="h-auto w-[100dvw] flex flex-col">
-      <div className="sm:text-3xl text-2xl font-medium title-font">
-        <div >提携業者</div>
+    <div className="h-auto w-full flex flex-col justify-center items-center">
+      <div className="sm:text-3xl text-2xl font-medium title-font mb-5 flex flex-col items-center">
+        <div className="inline-block">提携業者</div>
         <div className="border-b-4 rounded border-red-500 mx-auto w-[10dvw] mt-2"></div>
       </div>
-
+      <a href="https://imai5556.com/"><span className="underline text-lg text-red-600 font-bold">輸入車修理のエキスパート</span></a>
     </div>
+
     <div className="h-auto w-[100dvw] flex flex-col justify-center items-center">
       <section className="w-[80dvw] py-32 mx-auto">
         <div className="w-full container flex flex-col justify-center p-4 mx-auto md:p-8">

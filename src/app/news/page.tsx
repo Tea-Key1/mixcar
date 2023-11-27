@@ -1,6 +1,6 @@
 "use client"
+
 import { Fragment, useState, useEffect, Suspense } from "react";
-import { client } from "../../../libs/contentfulClient";
 import { loadPosts } from "../blog";
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
@@ -57,31 +57,29 @@ export default function News() {
                 <div className="-my-8 divide-y-2 divide-gray-100 border-y-2">
                     {items.map((item: any) =>
                         <div key={item.sys.id} className="py-8 flex flex-wrap md:flex-nowrap">
-                            <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                <span className="mt-1 text-gray-500 text-sm">{item.fields.date}</span>
-                            </div>
+
                             <div className="md:flex-grow">
+                                <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                    <span className="mt-1 text-gray-500 text-sm">{item.fields.date}</span>
+                                </div>
                                 <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">{item.fields.title}</h2>
                                 <p className="leading-relaxed ">{item.fields.body}</p>
                             </div>
                         </div>
                     )}
-                    {/* <div className="py-8 flex flex-wrap md:flex-nowrap">
-                        <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span className="font-semibold title-font text-gray-700">CATEGORY</span>
-                            <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-                        </div>
+                    <div className="py-8 flex flex-wrap md:flex-nowrap">
+
                         <div className="md:flex-grow">
-                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                            <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                            <a className="text-blue-500 inline-flex items-center mt-4">Learn More
-                                <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
+                            <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                                <span className="mt-1 text-gray-500 text-sm">2023.09.25</span>
+                            </div>
+                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">MiXオーナーズクラブ</h2>
+                            <div className="w-full flex justify-center align-middle">
+                            <Image loading="lazy" priority={false} src={"/textures/kiyaku20230925a.png"} alt="Photo by Fakurian Design" className="w-[80dvw] lg:w-[50dvw] object-cover object-center block" width={1000} height={1000} />
+
+                            </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>
