@@ -318,6 +318,5 @@ export default function App() {
     <div className="h-auto w-[100dvw]">
       <Footer />
     </div>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   </Fragment>)
 }
