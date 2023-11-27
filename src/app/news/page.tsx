@@ -20,6 +20,7 @@ export default function News() {
             setItems(posts)
         })()
     }, [])
+    // console.log(items)
     return (<Fragment>
         <motion.div className="h-[100dvh] w-[100dvw] fixed z-[-10]"
             initial={{ opacity: 0 }}
@@ -44,15 +45,13 @@ export default function News() {
                 </Canvas>
             </Suspense>
 
-
-
         </motion.div>
         <div className="h-auto w-[100dvw]">
             <ThemeProvider attribute="class">
                 <Header />
             </ThemeProvider>
         </div>
-        <section className="text-gray-600 body-font overflow-hidden">
+        <section className=" body-font overflow-hidden">
             <div className="container px-5 py-10 mx-auto">
                 <div className="-my-8 divide-y-2 divide-gray-100 border-y-2">
                     {items.map((item: any) =>
@@ -60,10 +59,16 @@ export default function News() {
 
                             <div className="md:flex-grow">
                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="mt-1 text-gray-500 text-sm">{item.fields.date}</span>
+                                    <span className={`mt-1 text-sm`}>{item.fields.date}{item == items[0] ? <span className="text-red-400 ml-2">new</span> : null}</span>
                                 </div>
-                                <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">{item.fields.title}</h2>
+                                <h2 className="text-2xl font-medium title-font mb-2">{item.fields.title}</h2>
                                 <p className="leading-relaxed ">{item.fields.body}</p>
+                                {item.fields.picture ?
+                                    <div className="w-full flex justify-center align-middle">
+                                        <Image loading="lazy" priority={false} src={"https://images.ctfassets.net/gdenp27geme8/3p2KSN9mcaszisi4VrYlPs/46a478dfb1e27f8a64b94283d38246a1/bg_img001.jpg"} alt="Photo by Fakurian Design" className="w-[80dvw] lg:w-[50dvw] object-cover object-center block" width={1000} height={1000} />
+                                    </div>
+                                    : null
+                                }
                             </div>
                         </div>
                     )}
@@ -71,12 +76,11 @@ export default function News() {
 
                         <div className="md:flex-grow">
                             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                <span className="mt-1 text-gray-500 text-sm">2023.09.25</span>
+                                <span className="mt-1 text-sm">2023.09.25</span>
                             </div>
-                            <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">MiXオーナーズクラブ</h2>
+                            <h2 className="text-2xl font-medium0 title-font mb-2">MiXオーナーズクラブ</h2>
                             <div className="w-full flex justify-center align-middle">
-                            <Image loading="lazy" priority={false} src={"/textures/kiyaku20230925a.png"} alt="Photo by Fakurian Design" className="w-[80dvw] lg:w-[50dvw] object-cover object-center block" width={1000} height={1000} />
-
+                                <Image loading="lazy" priority={false} src={"/textures/kiyaku20230925a.png"} alt="Photo by Fakurian Design" className="w-[80dvw] lg:w-[50dvw] object-cover object-center block" width={1000} height={1000} />
                             </div>
                         </div>
                     </div>

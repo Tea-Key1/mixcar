@@ -7,7 +7,7 @@ export default function Plane() {
         {resolvedTheme === 'light' ? null : (
             <mesh rotation-x={-45 * Math.PI / 2} scale={10}>
                 <planeGeometry args={[10, 10]} />
-                <meshStandardMaterial color={"#345A84"} />
+                <meshStandardMaterial color={"#326182"} />
             </mesh>
         )}
     </Fragment>)
