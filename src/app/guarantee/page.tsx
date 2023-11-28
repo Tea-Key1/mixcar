@@ -81,7 +81,7 @@ export default function Loan() {
                     <li className="mb-4">事故等での鈑金修理に関しては、条件はありますが、保証の範囲に含まれているのは、他の保証制度に類を見ない業界唯一の保証制度と言っても過言ではありません。</li>
                 </ul>
 
-                <p className="mb-6 text-gray-700 dark:text-gray-200 sm:text-lg md:mb-8 leading-10">
+                <p className="mb-6 text-gray-700 dark:text-gray-200 sm:text-lg md:mb-8">
                     保証サービスの利用に当たっては、お客様がご加入中の自動車保険のロードサービス特約にあるレッカー及び代車(レンタカー)の利用業者としてMiXあるいはMiXが指定する事業者を利用して頂く事になります。<br />
                     保証にご加入されていても、お客様ご自身で日頃のメンテナンスや定期点検はしっかり行ってください。整備記録簿等で確認できない場合は、保証対象外になる場合がありますのでご注意ください。
                 </p>
@@ -90,7 +90,7 @@ export default function Loan() {
 
                 <div className="relative flex flex-col items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
                     <div className="grid w-full grid-cols-1 gap-12 mx-auto lg:grid-cols-3">
-                        <div className="p-6 w-full border-2 border-cyan-500 flex flex-col items-center">
+                        <div className="p-0 md:p-6 w-full border-2 border-cyan-500 flex flex-col items-center">
                             <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-cyan-600 dark:text-cyan-200 rounded-full bg-blue-50 bg-opacity-25">
                                 <Image className="w-10 h-10" alt="issue" src={"/textures/issue001.svg"} width={1} height={1} />
                             </div>
@@ -104,7 +104,7 @@ export default function Loan() {
                                 <p className="text-base leading-relaxed text-center"><span className="underline text-cyan-600 dark:text-cyan-200">修理代金<br /></span>500,000円</p>
                             </div>
                         </div>
-                        <div className="p-6 w-full border-2 border-cyan-500 flex flex-col items-center">
+                        <div className="p-0 md:p-6 w-full border-2 border-cyan-500 flex flex-col items-center">
                             <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-cyan-600 dark:text-cyan-200 rounded-full bg-blue-50 bg-opacity-25">
                                 <Image className="w-10 h-10" alt="issue" src={"/textures/issue002.svg"} width={1} height={1} />
                             </div>
@@ -118,7 +118,7 @@ export default function Loan() {
                                 <p className="text-base leading-relaxed text-center"><span className="underline text-cyan-600 dark:text-cyan-200">修理代金<br /></span>330,000円</p>
                             </div>
                         </div>
-                        <div className="p-6 w-full border-2 border-cyan-500 flex flex-col items-center">
+                        <div className="p-0 md:p-6 w-full border-2 border-cyan-500 flex flex-col items-center">
                             <div className="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto mb-5 text-cyan-600 dark:text-cyan-200 rounded-full bg-blue-50 bg-opacity-25">
                                 <Image className="w-10 h-10" alt="issue" src={"/textures/issue003.svg"} width={1} height={1} />
                             </div>
@@ -133,8 +133,8 @@ export default function Loan() {
                             </div>
                         </div>
                     </div>
-                    <div className=" flex flex-col justify-center text-center items-center px-5 py-8 max-w-7xl sm:px-6 lg:px-8">
-                        <div className="flex flex-col flex-wrap w-full max-w-3xl prose text-center prose-blue">
+                    <div className=" flex flex-col justify-center items-center px-5 py-8 max-w-7xl sm:px-6 lg:px-8">
+                        <div className="flex flex-col flex-wrap w-full max-w-3xl prose text-left md:text-center prose-blue">
                             <p>MiX保証に加入した場合 <span className="text-2xl md:text-4xl text-red-500">修理代0円</span></p>
                             <div className="border-t-2"><p className="">※上記修理代の例はディーラー見積概算金額です。</p></div>
                         </div>
@@ -153,14 +153,14 @@ export default function Loan() {
                             <div className="md:w-[30dvw] lg:w-[20dvw] w-full sm:mr-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-500 flex-shrink-0">
                                 <Image alt="computer001" className="w-full" src={"/textures/computer001.png"} width={1000} height={1000} />
                             </div>
-                            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                            <div className="flex-grow sm:text-left text-left md:text-center mt-6 sm:mt-0">
                                 <h2 className="text-lg title-font font-medium mb-2">入庫後コンピューター診断</h2>
                                 <p className="text-gray-700 dark:text-gray-200 leading-relaxed text-base">車両が整備施設に入庫した際に、コンピューターを使用して車両の各種データやセンサーからの情報を読み取ります。</p>
 
                             </div>
                         </div>
                         <div className="flex items-center w-full lg:w-4/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-                            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                            <div className="flex-grow sm:text-left text-left md:text-center mt-6 sm:mt-0">
                                 <h2 className="text-lg title-font font-medium mb-2">修理</h2>
                                 <p className="text-gray-700 dark:text-gray-200 leading-relaxed text-base">入庫後のコンピューター診断で特定された不具合や異常箇所に対して、必要な修理や調整を行います。</p>
 
@@ -173,7 +173,7 @@ export default function Loan() {
                             <div className="md:w-[30dvw] lg:w-[10dvw] w-full sm:mr-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-500 flex-shrink-0">
                                 <Image alt="computer003" className="w-full" src={"/textures/computer003.jpg"} width={1000} height={1000} />
                             </div>
-                            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                            <div className="flex-grow sm:text-left text-left md:text-center mt-6 sm:mt-0">
                                 <h2 className="text-lg title-font font-medium mb-2">納車前コンピューター診断</h2>
                                 <p className="text-gray-700 dark:text-gray-200 leading-relaxed text-base">確認作業を通じて、修理や整備が正しく実施されたかどうかを確認します。納車前の最終チェックとして、可能な限りの問題を事前に発見し、お客様に高品質なサービスを提供します。</p>
 
@@ -197,7 +197,7 @@ export default function Loan() {
                 <h2 className="mb-2 text-xl font-semibold sm:text-2xl md:mb-4">5. お客様の声</h2>
 
                 <section className=" body-font overflow-hidden">
-                    <div className="container px-5 py-5 mx-auto border-b-2 border-cyan-300">
+                    <div className="container px-0 md:px-5 py-5 mx-auto border-b-2 border-cyan-300">
                         <div className="w-full mx-auto flex flex-wrap">
                             <div className=" w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
 
@@ -218,7 +218,7 @@ export default function Loan() {
                             </div>
                         </div>
                     </div>
-                    <div className="container px-5 py-5 mx-auto">
+                    <div className="container px-0 md:px-5 py-5 mx-auto">
                         <div className="w-full mx-auto flex flex-wrap">
                             <div className=" w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
 
