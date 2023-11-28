@@ -59,7 +59,7 @@ export default function App() {
             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
               <a href="https://www.carsensor.net/shop/kanagawa/322999001/stocklist/" className="inline-block rounded-lg bg-cyan-500 hover:bg-cyan-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-cyan-300 transition duration-100 focus-visible:ring md:text-base hover:translate-y-[-0.3go5dvh] hover:shadow-lg">中古車を見る</a>
 
-              <a href="#" className="inline-block rounded-lg bg-gray-200 hover:bg-gray-300 px-8 py-3 text-center text-sm font-semibold text-gray-700 outline-none ring-cyan-300 transition duration-100 focus-visible:ring md:text-base hover:translate-y-[-0.3go5dvh] hover:shadow-lg">MiX保証を見る</a>
+              <a href="/guarantee" className="inline-block rounded-lg bg-gray-200 hover:bg-gray-300 px-8 py-3 text-center text-sm font-semibold text-gray-700 outline-none ring-cyan-300 transition duration-100 focus-visible:ring md:text-base hover:translate-y-[-0.3go5dvh] hover:shadow-lg">MiX保証を見る</a>
             </div>
           </div>
 
@@ -251,7 +251,7 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="w-full flex flex-wrap justify-center -m-4">
             <div className="p-4 md:w-1/2 lg:w-1/3">
               <div className=" bg-gray-100 bg-opacity-25 px-8 md:pt-16 md:pb-24 rounded-lg overflow-hidden justify-items-center relative hover:translate-y-[-1dvh] duration-300">
                 <Image className="w-[80dvw] md:w-[30dvw] rounded object-cover object-center mb-6" src={"/textures/top_img005.jpg"} alt="content" width={1000} height={1000} />

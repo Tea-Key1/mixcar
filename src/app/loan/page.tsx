@@ -43,7 +43,7 @@ export default function Loan() {
         <div className=" py-6 sm:py-8 lg:py-12">
             <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
                 <div className="mx-auto flex max-w-xl flex-col items-center text-center">
-                    <p className="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">LOAN</p>
+                    <p className="mb-4 font-semibold text-cyan-500 md:mb-6 md:text-lg xl:text-xl">LOAN</p>
 
                     <h1 className="mb-8 text-3xl font-bold sm:text-4xl md:mb-12 md:text-5xl">自社ローン</h1>
                 </div>
@@ -60,7 +60,7 @@ export default function Loan() {
                 <div className="grid gap-4 sm:grid-cols-2 md:gap-8 xl:grid-cols-3">
 
                     <div className="flex divide-x rounded-lg border bg-gray-100 bg-opacity-25">
-                        <div className="flex items-center p-2 text-indigo-500 md:p-4">
+                        <div className="flex items-center p-2 text-cyan-500 md:p-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
@@ -72,7 +72,7 @@ export default function Loan() {
                         </div>
                     </div>
                     <div className="flex divide-x rounded-lg border bg-gray-100 bg-opacity-25">
-                        <div className="flex items-center p-2 text-indigo-500 md:p-4">
+                        <div className="flex items-center p-2 text-cyan-500 md:p-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
@@ -84,7 +84,7 @@ export default function Loan() {
                         </div>
                     </div>
                     <div className="flex divide-x rounded-lg border bg-gray-100 bg-opacity-25">
-                        <div className="flex items-center p-2 text-indigo-500 md:p-4">
+                        <div className="flex items-center p-2 text-cyan-500 md:p-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
@@ -96,7 +96,7 @@ export default function Loan() {
                         </div>
                     </div>
                     <div className="flex divide-x rounded-lg border bg-gray-100 bg-opacity-25">
-                        <div className="flex items-center p-2 text-indigo-500 md:p-4">
+                        <div className="flex items-center p-2 text-cyan-500 md:p-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
@@ -108,7 +108,7 @@ export default function Loan() {
                         </div>
                     </div>
                     <div className="flex divide-x rounded-lg border bg-gray-100 bg-opacity-25">
-                        <div className="flex items-center p-2 text-indigo-500 md:p-4">
+                        <div className="flex items-center p-2 text-cyan-500 md:p-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                             </svg>
