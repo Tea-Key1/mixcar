@@ -98,7 +98,7 @@ export default function Header() {
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.3}}
                     >自社ローン</motion.a>
-                    <motion.a href="/coating" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
+                    <motion.a href="/coating" className="text-gray-600 whitespace-nowrap hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
                         initial={{opacity:0, translateY: -20}}
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.4}}
