@@ -50,7 +50,7 @@ export default function Loan() {
             </div>
         </div>
 
-        <div className="w-[80dvw] lg:w-[60dvw] mx-auto py-6 sm:py-8 lg:py-12 bg-gray-200 dark:bg-gray-500 bg-opacity-25 dark:bg-opacity-25">
+        <div className="w-[95dvw] md:w-[80dvw] lg:w-[60dvw] mx-auto py-6 sm:py-8 lg:py-12 bg-gray-200 dark:bg-gray-500 bg-opacity-25 dark:bg-opacity-25">
             <div className="flex flex-col justify-center max-w-screen-xl px-10 md:px-8">
 
                 <div className="flex flex-col w-full justify-center items-center align-middle mb-5 overflow-hidden rounded-lg md:mb-10">
