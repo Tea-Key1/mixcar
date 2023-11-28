@@ -20,14 +20,12 @@ export default function News() {
             setItems(posts)
         })()
     }, [])
-    // console.log(items)
+
     return (<Fragment>
         <motion.div className="h-[100dvh] w-[100dvw] fixed z-[-10]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{
-                duration: 1
-            }}
+            transition={{duration: 1}}
         >
             <Suspense fallback={null}>
                 <Canvas
@@ -51,8 +49,8 @@ export default function News() {
                 <Header />
             </ThemeProvider>
         </div>
-        <section className=" body-font overflow-hidden">
-            <div className="container px-5 py-10 mx-auto">
+        <section className="flex justify-center items-center align-middle body-font">
+            <div className="container px-5 py-10 mx-auto md:w-3/5">
                 <div className="-my-8 divide-y-2 divide-gray-100 border-y-2">
                     {items.map((item: any) =>
                         <div key={item.sys.id} className="py-8 flex flex-wrap md:flex-nowrap">

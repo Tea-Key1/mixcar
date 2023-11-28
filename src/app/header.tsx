@@ -83,27 +83,27 @@ export default function Header() {
                 className="absolute right-0 top-[10dvh] h-[40dvh] w-[30dvw] md:w-[20dvw] bg-white rounded-lg shadow-4xl p-5 pt-0 border-2 border-gray-200"
             >
                 <div className="w-full h-full flex flex-col justify-around items-center">
-                    <motion.a href="/" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100"
+                    <motion.a href="/" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
                         initial={{opacity:0, translateY: -20}}
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.1}}
                     >ホーム</motion.a>
-                    <motion.a href="/guarantee" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100"
+                    <motion.a href="/guarantee" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
                         initial={{opacity:0, translateY: -20}}
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.2}}
                     >MiX保証</motion.a>
-                    <motion.a href="/loan" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100e"
+                    <motion.a href="/loan" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
                         initial={{opacity:0, translateY: -20}}
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.3}}
                     >自社ローン</motion.a>
-                    <motion.a href="/coding" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100"
+                    <motion.a href="/coding" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
                         initial={{opacity:0, translateY: -20}}
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.4}}
                     >コーティング</motion.a>
-                    <motion.a href="/news" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100"
+                    <motion.a href="/news" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
                         initial={{opacity:0, translateY: -20}}
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.5}}

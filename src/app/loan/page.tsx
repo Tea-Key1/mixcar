@@ -14,9 +14,7 @@ export default function Loan(){
                 <motion.div className="h-[100dvh] w-[100dvw] fixed z-[-10]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{
-                duration: 1
-            }}
+            transition={{ duration: 1 }}
         >
             <Suspense fallback={null}>
                 <Canvas

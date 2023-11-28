@@ -45,14 +45,14 @@ export default function App() {
         <Header />
       </ThemeProvider>
       <motion.div className="h-auto w-full flex justify-center p-[5dvw]"
-        initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration:1}}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <section className="flex flex-col max-w-screen-xl justify-around gap-6 sm:gap-10 md:gap-16 lg:flex-row">
 
           <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-            <p className="mb-4 font-semibold text-cyan-500 dark:text-cyan-200 md:mb-6 text-xs sm:text-base">一人でも多くの方に、安心な中古輸入車をお届けしたい。</p>
+            <p className="mb-4 font-semibold text-cyan-500 dark:text-cyan-200 md:mb-6 text-xs sm:text-lg">一人でも多くの方に、安心な中古輸入車をお届けしたい。</p>
 
             <h1 className="mb-8 font-bold md:mb-12 text-xs sm:text-base">従来の中古車では、高額な保証システムに入らない限り故障に対する安心を手に入れる事はできませんでした。MiXでは独自の保証システムをリーズナブルな価格で、お車の安心をお届けしています。</h1>
 
@@ -92,38 +92,54 @@ export default function App() {
             <p className="lg:w-1/2 w-full leading-relaxed ">安心してお車をご購入いただけるように</p>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <motion.div className="xl:w-1/4 md:w-1/2 p-4"
+              initial={{ opacity: 0, translateY: -50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1, delay: 0 }}
+            >
               <div className="bg-gray-100 bg-opacity-25 p-6 rounded-lg hover:translate-y-[-1dvh] duration-300">
                 <Image className="rounded object-cover object-center mb-6" src={"/textures/top_img001.jpg"} alt="content" width={1000} height={1000} />
                 <h3 className="tracking-widest text-cyan-500 dark:text-cyan-200 text-xs font-medium title-font">CLEANING</h3>
                 <h2 className="text-lg font-medium title-font mb-4">クリーニング</h2>
                 <p className="leading-relaxed text-base h-40 overflow-y-auto">当店の在庫車は全て専門スタッフが、心を込めてクリーニング、ボディ磨きを行っています。長年の経験で小傷などは磨きで綺麗に仕上げています。</p>
               </div>
-            </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            </motion.div>
+            <motion.div className="xl:w-1/4 md:w-1/2 p-4"
+              initial={{ opacity: 0, translateY: -50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1, delay: 0.25 }}
+            >
               <div className="bg-gray-100 bg-opacity-25 p-6 rounded-lg hover:translate-y-[-1dvh] duration-300">
                 <Image className="rounded object-cover object-center mb-6" src={"/textures/top_img002.jpg"} alt="content" width={1000} height={1000} />
                 <h3 className="tracking-widest text-cyan-500 dark:text-cyan-200 text-xs font-medium title-font">SUPPORT</h3>
                 <h2 className="text-lg font-medium title-font mb-4">サポート</h2>
                 <p className="leading-relaxed text-base h-40 overflow-y-auto">故障が起きた際は、代車を持ってレッカー車で引き取りに伺います。お車の引取りから代車の手配や修理まで一貫して行うのでお客様に面倒や負担は一切ありません。</p>
               </div>
-            </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            </motion.div>
+            <motion.div className="xl:w-1/4 md:w-1/2 p-4"
+              initial={{ opacity: 0, translateY: -50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
               <div className="bg-gray-100 bg-opacity-25 p-6 rounded-lg hover:translate-y-[-1dvh] duration-300">
                 <Image className="rounded object-cover object-center mb-6" src={"/textures/top_img003.jpg"} alt="content" width={1000} height={1000} />
                 <h3 className="tracking-widest text-cyan-500 dark:text-cyan-200 text-xs font-medium title-font">REPAIR</h3>
                 <h2 className="text-lg font-medium title-font mb-4">修理/点検整備</h2>
                 <p className="leading-relaxed text-base h-40 overflow-y-auto">法定整備だけでは中古車の状態を見極めるのに安心とは言えません。独自の点検項目を定めて、しっかりと点検整備を行っております。MiXでは安全な車を安心して買う事ができる様に、適切な点検項目を加えています。</p>
               </div>
-            </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            </motion.div>
+            <motion.div className="xl:w-1/4 md:w-1/2 p-4"
+              initial={{ opacity: 0, translateY: -50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1, delay: 0.75 }}
+            >
               <div className="bg-gray-100 bg-opacity-25 p-6 rounded-lg hover:translate-y-[-1dvh] duration-300">
                 <Image className="rounded object-cover object-center mb-6" src={"/textures/top_img004.jpg"} alt="content" width={1000} height={1000} />
                 <h3 className="tracking-widest text-cyan-500 dark:text-cyan-200 text-xs font-medium title-font">INSURANCE</h3>
                 <h2 className="text-lg font-medium title-font mb-4">返品保証</h2>
                 <p className="leading-relaxed text-base h-40 overflow-y-auto">遠方のお客様のために到着した商品に問題があった場合は「返品」をお受付しています。詳しくはお気軽にお問い合わせください。</p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -191,25 +207,25 @@ export default function App() {
 
                 <ul className="mb-6 list-inside list-disc text-left text-cyan-500 dark:text-cyan-200 sm:text-lg md:mb-8">
                   <motion.li className=" text-md font-semibold"
-                    initial={{opacity:0, translateX:-10}}
-                    whileInView={{opacity:1, translateX:0}}
-                    transition={{duration:1}}
+                    initial={{ opacity: 0, translateX: -10 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 1 }}
                   >Mission ミッション(社会的使命)</motion.li>
                   <p className=" text-gray-500 dark:text-white text-left sm:text-lg md:mb-2">
                     仲間（ファミリー）の絆を大切にし、コミュニティーの力で、新しい時代を切り開く一大経済圏を創出する。
                   </p>
                   <motion.li className=" text-md font-semibold"
-                    initial={{opacity:0, translateX:-10}}
-                    whileInView={{opacity:1, translateX:0}}
-                    transition={{duration:1}}
+                    initial={{ opacity: 0, translateX: -10 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 1 }}
                   >Vision ビジョン(未来像)</motion.li>
                   <p className=" text-gray-500 dark:text-white text-left sm:text-lg md:mb-2">
                     世界の全ての人々の豊かさと健康と幸せを実現する
                   </p>
                   <motion.li className=" text-md font-semibold"
-                    initial={{opacity:0, translateX:-10}}
-                    whileInView={{opacity:1, translateX:0}}
-                    transition={{duration:1}}
+                    initial={{ opacity: 0, translateX: -10 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 1 }}
                   >Values バリュー(価値観・行動指針)</motion.li>
                   <p className=" text-gray-500 dark:text-white text-left sm:text-lg md:mb-2">
                     お客様を大事にする。<br />
@@ -222,9 +238,9 @@ export default function App() {
                     忘れをなくす。<br />
                   </p>
                   <motion.li className=" text-md font-semibold"
-                    initial={{opacity:0, translateX:-10}}
-                    whileInView={{opacity:1, translateX:0}}
-                    transition={{duration:1}}
+                    initial={{ opacity: 0, translateX: -10 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 1 }}
                   >Strategy ビジョン実現のための戦略</motion.li>
                   <p className=" text-gray-500 dark:text-white text-left sm:text-lg md:mb-2">
                     コミュニティーの基礎となる会員システムを構築する。<br />
@@ -269,7 +285,7 @@ export default function App() {
       <section className="w-[80dvw] py-32 mx-auto">
         <div className="w-full container flex flex-col justify-center p-4 mx-auto md:p-8">
           <h2 className="w-full mb-12 text-2xl font-bold text-center sm:text-3xl">よくある質問</h2>
-          <div className="w-full flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+          <div className="w-full flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700 dark:divide-gray-100">
             <details>
               <summary className="py-2 outline-none cursor-pointer focus:underline">MiX保証は何度でも受けられるの?</summary>
               <div className="px-4 pb-4 text-xs sm:text-base">
@@ -362,22 +378,22 @@ export default function App() {
     </div> */}
     <div className="h-auto w-[100dvw]">
       <section className="body-font relative">
-        <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap justify-around">
-          <div className="w-4/5 md:w-1/2  bg-opacity-25 overflow-hidden p-5 flex justify-items-center">
+        <div className="container px-0 md:px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap justify-around">
+          <div className="w-[70dvw] md:w-[50dvw]  bg-opacity-25 overflow-hidden p-5 flex justify-items-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6512.686471111687!2d139.11851700000003!3d35.297452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a135b65a3ca5%3A0xcc435361be97bd0f!2z44CSMjUwLTAxMTcg56We5aWI5bed55yM5Y2X6Laz5p-E5biC5aGa5Y6f77yT77yQ77yU77yS4oiS77yR!5e0!3m2!1sja!2sjp!4v1701006114296!5m2!1sja!2sjp" width="600" height="450" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
 
           </div>
-          <div className="w-4/5 md:w-1/2  flex flex-col p-5 justify-items-center md:ml-auto">
+          <div className="w-full md:w-[50dvw] flex flex-col p-5 justify-items-center md:ml-auto">
 
-            <div className=" shadow-md sm:rounded-lg">
+            <div className="shadow-md sm:rounded-lg">
               <table className="w-full text-sm text-left rtl:text-right ">
 
-                <tbody>
+                <tbody className="w-full flex-col">
                   <tr className="border-y dark:border-gray-200 border-gray-700">
                     <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">
                       会社名
                     </th>
-                    <td className="px-6 py-4">
+                    <td className="px-6 py-4 flex-wrap">
                       合同会社MiX
                     </td>
                   </tr>
@@ -393,15 +409,7 @@ export default function App() {
                     <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">
                       所在地
                     </th>
-                    <td className="px-6 py-4">
-                      Black
-                    </td>
-                  </tr>
-                  <tr className="border-b dark:border-gray-200 border-gray-700">
-                    <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap">
-                      所在地
-                    </th>
-                    <td className="px-6 py-4">
+                    <td className="px-6 py-4 flex-wrap">
                       本 店<br />
                       〒179-0073<br />
                       東京都練馬区田柄2-42-6-504号<br />
