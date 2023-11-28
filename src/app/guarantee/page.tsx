@@ -133,9 +133,9 @@ export default function Loan() {
                             </div>
                         </div>
                     </div>
-                    <div className=" flex flex-col justify-center items-center px-5 py-8 max-w-7xl sm:px-6 lg:px-8">
-                        <div className="flex flex-col flex-wrap w-full max-w-3xl prose text-left md:text-center prose-blue">
-                            <p>MiX保証に加入した場合 <span className="text-2xl md:text-4xl text-red-500">修理代0円</span></p>
+                    <div className=" flex flex-col justify-center items-center px-0 py-8 max-w-7xl md:px-6 lg:px-8">
+                        <div className="flex flex-col flex-wrap w-full prose text-left md:text-center prose-blue">
+                            <p>MiX保証に加入した場合<span className="text-2xl md:text-4xl text-red-500">修理代0円</span></p>
                             <div className="border-t-2"><p className="">※上記修理代の例はディーラー見積概算金額です。</p></div>
                         </div>
                     </div>
