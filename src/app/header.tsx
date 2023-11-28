@@ -64,7 +64,7 @@ export default function Header() {
                             <a href="/loan" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">自社ローン</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="/coding" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">コーティング</a>
+                            <a href="/coating" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">コーティング</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
                             <a href="/news" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">お知らせ</a>
@@ -98,7 +98,7 @@ export default function Header() {
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.3}}
                     >自社ローン</motion.a>
-                    <motion.a href="/coding" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
+                    <motion.a href="/coating" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"
                         initial={{opacity:0, translateY: -20}}
                         animate={{opacity:1, translateY:0}}
                         transition={{duration:0.4}}

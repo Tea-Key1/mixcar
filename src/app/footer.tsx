@@ -21,7 +21,7 @@ export default function Footer() {
                     <a href="/loan" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
                         <p className="title-font font-medium tracking-widest text-sm mb-3">自社ローン</p>
                     </a>
-                    <a href="/coding" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
+                    <a href="/coating" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">
                         <p className="title-font font-medium tracking-widest text-sm mb-3">コーティング</p>
                     </a>
                     <a href="/news" className="lg:w-1/4 md:w-1/2 w-full px-4 hover:translate-y-[-0.25dvh] duration-100">

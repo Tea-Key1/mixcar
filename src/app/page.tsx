@@ -37,8 +37,6 @@ export default function App() {
         </Canvas>
       </Suspense>
 
-
-
     </motion.div>
     <div className="h-auto w-[100dvw]">
       <ThemeProvider attribute="class">

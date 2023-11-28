@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: "MyFont";
+    src: url(/fonts/NotoSerifJP-Regular.otf);
+}
 
 html{
     overscroll-behavior: none;
     overflow-x: hidden;
+    font-family: "MyFont";
 }
