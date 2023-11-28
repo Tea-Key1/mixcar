@@ -55,19 +55,19 @@ export default function Header() {
                 <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="/" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">ホーム</a>
+                            <a href="/" className=" inline py-2 px-4 text-gray-600 font-medium hover:text-black dark:text-gray-400 dark:hover:text-white ">ホーム</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="/guarantee" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">MiX保証</a>
+                            <a href="/guarantee" className=" inline py-2 px-4 text-gray-600 font-medium hover:text-black dark:text-gray-400 dark:hover:text-white ">MiX保証</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="/loan" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">自社ローン</a>
+                            <a href="/loan" className=" inline py-2 px-4 text-gray-600 font-medium hover:text-black dark:text-gray-400 dark:hover:text-white ">自社ローン</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="/coating" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">コーティング</a>
+                            <a href="/coating" className=" inline py-2 px-4 text-gray-600 font-medium hover:text-black dark:text-gray-400 dark:hover:text-white ">コーティング</a>
                         </li>
                         <li className="hover:translate-y-[-0.25dvh] duration-100">
-                            <a href="/news" className=" inline py-2 px-4 text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white ">お知らせ</a>
+                            <a href="/news" className=" inline py-2 px-4 text-gray-600 font-medium hover:text-black dark:text-gray-400 dark:hover:text-white ">お知らせ</a>
                         </li>
                     </ul>
                 </div>
