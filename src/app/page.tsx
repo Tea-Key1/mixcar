@@ -105,7 +105,7 @@ export default function App() {
             <motion.div className="xl:w-1/4 md:w-1/2 p-4"
               initial={{ opacity: 0, translateY: -50 }}
               whileInView={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 1, delay: 0.25 }}
+              transition={{ duration: 1, delay: 0.1 }}
             >
               <div className="bg-gray-100 bg-opacity-25 p-6 rounded-lg hover:translate-y-[-1dvh] duration-300">
                 <Image className="rounded object-cover object-center mb-6" src={"/textures/top_img002.jpg"} alt="content" width={1000} height={1000} />
@@ -117,7 +117,7 @@ export default function App() {
             <motion.div className="xl:w-1/4 md:w-1/2 p-4"
               initial={{ opacity: 0, translateY: -50 }}
               whileInView={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
             >
               <div className="bg-gray-100 bg-opacity-25 p-6 rounded-lg hover:translate-y-[-1dvh] duration-300">
                 <Image className="rounded object-cover object-center mb-6" src={"/textures/top_img003.jpg"} alt="content" width={1000} height={1000} />
@@ -129,7 +129,7 @@ export default function App() {
             <motion.div className="xl:w-1/4 md:w-1/2 p-4"
               initial={{ opacity: 0, translateY: -50 }}
               whileInView={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 1, delay: 0.75 }}
+              transition={{ duration: 1, delay: 0.3 }}
             >
               <div className="bg-gray-100 bg-opacity-25 p-6 rounded-lg hover:translate-y-[-1dvh] duration-300">
                 <Image className="rounded object-cover object-center mb-6" src={"/textures/top_img004.jpg"} alt="content" width={1000} height={1000} />
