@@ -38,10 +38,31 @@ export default function App() {
       </Suspense>
 
     </motion.div>
+
     <div className="h-auto w-[100dvw]">
       <ThemeProvider attribute="class">
         <Header />
       </ThemeProvider>
+      <Image loading="lazy" priority={false} placeholder='empty' src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="h-full md:w-[80dvw] mx-0 md:mx-auto w-full object-cover object-center block rounded-md" width={1000} height={1000} />
+
+    </div>
+
+    <div className="relative h-auto w-[100vw] mt-5">
+      <div className="relative h-full md:w-[60dvw] mx-0 md:mx-auto w-full">
+        <Image loading="lazy" priority={false} placeholder='empty' src={"/textures/carloan-ad2.jpeg"} alt="Photo by Fakurian Design" className="h-full w-full object-cover object-center block rounded-md" width={1000} height={1000} />
+        <div className="absolute bottom-[1dvh] right-[6dvw] px-[5dvw] py-[3dvh] md:py-[1dvh] lg:py-[6dvh]">
+          <svg className="animate-bounce w-6 h-6 ...">
+          </svg>
+          <a href="/loan">
+            <div className="w-full md:w-[20dvw] rounded-md border-4 bg-white text-xl md:text-3xl lg:text-5xl md:py-2 text-center border-cyan-500 text-slate-900 shadow-md  hover:-translate-y-1.5 duration-100">詳しく見る</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div className="h-auto w-[100dvw]">
+
       <motion.div className="h-auto w-full flex justify-center p-[5dvw]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -74,6 +95,7 @@ export default function App() {
         </section>
       </motion.div>
     </div>
+
     <div className="h-auto w-[100dvw]">
 
       <Blog />
