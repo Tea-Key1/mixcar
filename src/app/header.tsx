@@ -24,14 +24,14 @@ export default function Header() {
         setOpen(!isOpen)
     }
     return (<Fragment>
-        <motion.header className="h-[15dvh] w-full flex flex-wrap justify-items-center border-gray-200 dark:bg-gray-500 dark:bg-opacity-25 bg-gray-200 bg-opacity-25"
+        <motion.header className="h-[10dvh] w-full flex flex-wrap justify-items-center border-gray-200 dark:bg-gray-500 dark:bg-opacity-25 bg-gray-200 bg-opacity-25"
             initial={{opacity:0, translateY:-50}}
             animate={{opacity:1, translateY:0}}
             transition={{duration:1.5}}
         >
             <nav className="h-full w-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-8 lg:px-6 py-2.5">
                 <a href="/" className="flex items-center">
-                    <Image alt="logo" src={"/textures/mixlogo.png"} className="w-[30dvw] lg:w-[15dvw]" height={1000} width={1000} />
+                    <Image alt="logo" src={"/textures/mixlogo.png"} className="w-[22dvw] lg:w-[10dvw]" height={1000} width={1000} />
                 </a>
                 <div className="flex items-center lg:order-2">
                     <label className='themeSwitcherTwo relative inline-flex cursor-pointer select-none items-center'>
