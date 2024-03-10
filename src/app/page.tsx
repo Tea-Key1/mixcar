@@ -121,10 +121,7 @@ export default function App() {
 
             <p className="mb-8 leading-relaxed  md:mb-12 lg:w-4/5 text-xs sm:text-base">保証システムをご提供するために、業界オークションから良質な中古車を仕入れ、納車前の点検整備を徹底しています。さらに内外装の仕上げをしっかりした上で、リーズナブルな価格で販売しています。</p>
 
-            <div className="w-80 max-w-xl mx-auto">
-              <label className="text-white dark:text-gray-200">Range</label>
-              <input id="range" type="range" className="block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-            </div>
+
 
             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
               <a href="https://www.carsensor.net/shop/kanagawa/322999001/stocklist/" className="inline-block rounded-lg bg-cyan-500 hover:bg-cyan-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-cyan-300 transition duration-100 focus-visible:ring md:text-base hover:translate-y-[-0.3go5dvh] hover:shadow-lg">中古車を見る</a>
@@ -144,6 +141,17 @@ export default function App() {
         </section>
       </motion.div>
     </div>
+
+    {/* <div className="h-auto w-[100dvw]">
+
+      <div className="w-80 max-w-xl mx-auto">
+        <label className="text-white dark:text-gray-200">Range</label>
+        <input id="range" type="range" className="block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+      </div>
+
+    </div> */}
+
+
 
     <div className="h-auto w-[100dvw]">
 
