@@ -39,14 +39,14 @@ export default function App() {
 
     </motion.div>
 
-    <div className="h-auto w-[100dvw]">
+    <div className="h-auto w-[100dvw] ">
       <ThemeProvider attribute="class">
         <Header />
       </ThemeProvider>
       {/* <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="h-full md:w-[80dvw] mx-0 md:mx-auto w-full object-cover object-center block rounded-md" width={1000} height={1000} /> */}
 
       <div id="default-carousel" className="relative w-full" data-carousel="slide">
-        <div className="relative overflow-hidden rounded-lg h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-0">
+        <div className="relative overflow-hidden rounded-lg h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-0 mt-5">
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
@@ -59,16 +59,16 @@ export default function App() {
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad3.jpeg"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
-          </div>
+          </div> */}
         </div>
         <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
           <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
           <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
           <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
           <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+          {/* <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> */}
         </div>
         <button type="button" className="absolute top-0 start-[10dvw] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -120,6 +120,11 @@ export default function App() {
             <h1 className="mb-8 font-bold md:mb-12 text-xs sm:text-base">従来の中古車では、高額な保証システムに入らない限り故障に対する安心を手に入れる事はできませんでした。MiXでは独自の保証システムをリーズナブルな価格で、お車の安心をお届けしています。</h1>
 
             <p className="mb-8 leading-relaxed  md:mb-12 lg:w-4/5 text-xs sm:text-base">保証システムをご提供するために、業界オークションから良質な中古車を仕入れ、納車前の点検整備を徹底しています。さらに内外装の仕上げをしっかりした上で、リーズナブルな価格で販売しています。</p>
+
+            <div className="w-80 max-w-xl mx-auto">
+              <label className="text-white dark:text-gray-200">Range</label>
+              <input id="range" type="range" className="block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+            </div>
 
             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
               <a href="https://www.carsensor.net/shop/kanagawa/322999001/stocklist/" className="inline-block rounded-lg bg-cyan-500 hover:bg-cyan-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-cyan-300 transition duration-100 focus-visible:ring md:text-base hover:translate-y-[-0.3go5dvh] hover:shadow-lg">中古車を見る</a>
