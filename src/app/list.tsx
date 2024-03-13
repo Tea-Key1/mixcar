@@ -178,16 +178,16 @@ export default function Blog() {
                             <a key={list.sys.id} href={`${list.fields.url}`}>
                                 <div className="py-8 flex flex-col px-5 flex-wrap md:flex-nowrap border-2 border-slate-700 dark:border-slate-300 rounded-md hover:shadow-md hover:shadow-slate-300 hover:-translate-y-2 duration-200">
                                     <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                        <span className="mt-1 text-sm">{list.fields.carName}</span>
+                                        <span className="mt-1 text-md font-bold">{list.fields.carName}</span>
                                         <span className="mt-1 text-sm">{list.fields.manufacturer}</span>
-                                        <span className="mt-1 text-sm">年式{list.fields.age}</span>
+                                        <span className="mt-1 text-sm">年式 {list.fields.age}</span>
                                         {list.fields.engine ?
-                                            <span className="mt-1 text-sm">排気量{list.fields.engine}</span>
+                                            <span className="mt-1 text-sm">排気量 {list.fields.engine}</span>
                                             : <span className="mt-6 text-sm"></span>
                                         }
-                                        <span className="mt-1 text-sm">走行距離{list.fields.mileage}</span>
-                                        <span className="mt-1 text-sm">支払総額{list.fields.payPrice}</span>
-                                        <span className="mt-1 text-sm">本体価格{list.fields.basePrice}</span>
+                                        <span className="mt-1 text-sm">走行距離 {list.fields.mileage}</span>
+                                        <span className="mt-1 text-sm">支払総額 {list.fields.payPrice}</span>
+                                        <span className="mt-1 text-sm">本体価格 {list.fields.basePrice}</span>
                                         <img loading="lazy" src={"https:" + list.fields.picture.fields.file.url} alt="Photo" className="w-[80%] object-cover object-center block" />
                                     </div>
                                 </div>
