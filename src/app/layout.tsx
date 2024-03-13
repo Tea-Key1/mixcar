@@ -4,8 +4,8 @@ import './globals.css'
 
 
 export const metadata: Metadata = {
-  title: '合同会社 MiX 神奈川県 中古車 自社ローン 安心 安全 安い 審査 通る 簡単 レンタル 保証 施工 修理',
-  description: '合同会社 MiX 神奈川県 中古車 自社ローン 安心 安全 安い 審査 通る 簡単 レンタル 保証 施工 修理',
+  title: '合同会社 MiX 中古車と自社ローンをご用意しております！',
+  description: '頭金不要、最大120回分割できる自社ローン！安心、安全なカーライフをご提供できるよう、MiX独自の保証もご用意しております！全国対応/公式ラインで簡単注文。安い中古車購入。',
 }
 
 export default function RootLayout({
