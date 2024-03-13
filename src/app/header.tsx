@@ -24,7 +24,7 @@ export default function Header() {
         setOpen(!isOpen)
     }
     return (<Fragment>
-        <motion.header className="h-[10dvh] w-full flex flex-wrap justify-items-center border-gray-200 dark:bg-gray-500 dark:bg-opacity-25 bg-gray-200 bg-opacity-25"
+        <motion.header className="h-[10dvh] w-full flex flex-wrap justify-items-center border-gray-200 dark:bg-gray-500 dark:bg-opacity-25 bg-gray-200 bg-opacity-25 z-[30]"
             initial={{opacity:0, translateY:-50}}
             animate={{opacity:1, translateY:0}}
             transition={{duration:1.5}}

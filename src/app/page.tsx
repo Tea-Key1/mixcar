@@ -15,7 +15,7 @@ import Footer from "./footer"
 
 export default function App() {
   return (<Fragment>
-    <motion.div className="h-[100dvh] w-[100dvw] fixed z-[-10]"
+    <motion.div className="h-[100dvh] w-[100dvw] fixed z-[-30]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
@@ -48,16 +48,16 @@ export default function App() {
 
       <div id="default-carousel" className="relative w-full" data-carousel="slide">
         <div className="relative overflow-hidden rounded-lg h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-0 mt-5">
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad3.jpeg"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad3.jpeg"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
           {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
@@ -71,16 +71,16 @@ export default function App() {
           <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
           {/* <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> */}
         </div>
-        <button type="button" className="absolute top-0 start-[10dvw] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none">
+        <button type="button" className="absolute top-0 start-[10dvw] flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none " data-carousel-prev>
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none -z-[10]">
             <svg className="w-4 h-4 dark:text-white text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
             </svg>
             <span className="sr-only">Previous</span>
           </span>
         </button>
-        <button type="button" className="absolute top-0 end-[10dvw] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none">
+        <button type="button" className="absolute top-0 end-[10dvw] flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none " data-carousel-next>
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none -z-[10]">
             <svg className="w-4 h-4 dark:text-white text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
             </svg>
