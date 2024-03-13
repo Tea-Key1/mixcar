@@ -17,16 +17,13 @@ export const loadList = async () => {
 
 export default function Blog() {
     const [items, setItems] = useState([])
-    const [list, setList] = useState([])
     useEffect(() => {
         (async () => {
             let posts: any = await loadPosts()
             setItems(posts.slice(0, 3))
-            let carList: any = await loadList()
-            setList(carList)
+
         })()
     }, [])
-    // console.log(list)
     return (<Fragment>
         <section className="flex justify-center items-center align-middle body-font">
             <div className="container px-5 py-10 md:w-3/5">

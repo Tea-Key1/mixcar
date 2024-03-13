@@ -8,6 +8,7 @@ import Image from "next/image"
 import Header from "./header"
 import { motion } from "framer-motion"
 import Plane from "./plane"
+import List from "./list"
 import Blog from "./blog"
 import Footer from "./footer"
 
@@ -142,18 +143,14 @@ export default function App() {
       </motion.div>
     </div>
 
-    {/* <div className="h-auto w-[100dvw]">
-
-      <div className="w-80 max-w-xl mx-auto">
-        <label className="text-white dark:text-gray-200">Range</label>
-        <input id="range" type="range" className="block w-full py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
-      </div>
-
-    </div> */}
-
-
-
     <div className="h-auto w-[100dvw]">
+      <List />
+
+    </div>
+
+
+
+    <div className="h-auto w-[100dvw] my-5">
 
       <Blog />
 
