@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Providers } from './provider'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           {children}
         </Providers>
         <Analytics/>
+        <SpeedInsights />
         {/* <script src="../../node_modules/flowbite/dist/flowbite.js"></script> */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" async/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" defer/>

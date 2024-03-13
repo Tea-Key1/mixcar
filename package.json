@@ -13,6 +13,7 @@
     "@react-three/fiber": "^8.15.11",
     "@types/yuka": "^0.7.4",
     "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "contentful": "^10.6.12",
     "flowbite": "^2.2.0",
     "framer-motion": "^10.16.5",
