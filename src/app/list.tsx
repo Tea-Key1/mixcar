@@ -188,7 +188,7 @@ export default function Blog() {
                                         <span className="mt-1 text-sm">走行距離 {list.fields.mileage}</span>
                                         <span className="mt-1 text-sm">支払総額 {list.fields.payPrice}</span>
                                         <span className="mt-1 text-sm">本体価格 {list.fields.basePrice}</span>
-                                        <Image loading="lazy" priority={false} src={"https:" + list.fields.picture.fields.file.url} alt="Photo" className="w-[80%] object-cover object-center block" />
+                                        <Image loading="lazy" priority={false} src={"https:" + list.fields.picture.fields.file.url} alt="Photo" className="w-[80%] object-cover object-center block" width={1000} height={1000}/>
                                     </div>
                                 </div>
                             </a>
