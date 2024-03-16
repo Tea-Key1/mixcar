@@ -80,7 +80,7 @@ export default function Header() {
                 exit={{ opacity: 0, }}
                 transition={{ duration: 0.2 }}
                 onViewportLeave={handleMenuOpen}
-                className="absolute right-0 top-[10dvh] h-[40dvh] w-[30dvw] md:w-[20dvw] bg-white rounded-lg shadow-4xl p-5 pt-0 border-2 border-gray-200"
+                className="absolute right-0 top-[10dvh] h-[40dvh] w-[30dvw] md:w-[20dvw] bg-white rounded-lg shadow-4xl p-5 pt-0 border-2 border-gray-200  z-[30]"
             >
                 <div className="w-full h-full flex flex-col justify-around items-center">
                     <motion.a href="/" className="text-gray-600 hover:text-black font-medium text-xs sm:text-base hover:translate-y-[-0.25dvh] duration-100 border-b-2"

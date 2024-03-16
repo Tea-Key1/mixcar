@@ -46,8 +46,8 @@ export default function App() {
       </ThemeProvider>
       {/* <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="h-full md:w-[80dvw] mx-0 md:mx-auto w-full object-cover object-center block rounded-md" width={1000} height={1000} /> */}
 
-      <div id="default-carousel" className="relative w-full z-[-10]" data-carousel="slide">
-        <div className="relative overflow-hidden rounded-lg h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-0 mt-5">
+      <div id="default-carousel" className="relative w-full " data-carousel="slide">
+        <div className="relative overflow-hidden rounded-lg h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-0 mt-5 z-[-10]">
           <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
@@ -64,7 +64,7 @@ export default function App() {
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div> */}
         </div>
-        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <div className="absolute flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
           <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
           <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
           <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
