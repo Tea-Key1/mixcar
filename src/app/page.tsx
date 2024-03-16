@@ -46,18 +46,18 @@ export default function App() {
       </ThemeProvider>
       {/* <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="h-full md:w-[80dvw] mx-0 md:mx-auto w-full object-cover object-center block rounded-md" width={1000} height={1000} /> */}
 
-      <div id="default-carousel" className="relative w-full" data-carousel="slide">
+      <div id="default-carousel" className="relative w-full z-[-10]" data-carousel="slide">
         <div className="relative overflow-hidden rounded-lg h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-0 mt-5">
-          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
-          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad3.jpeg"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
-          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad.png"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
-          <div className="hidden duration-700 ease-in-out -z-[20]" data-carousel-item>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
             <Image loading="lazy" priority={false} src={"/textures/carloan-ad3.jpeg"} alt="Photo by Fakurian Design" className="relative  h-[45dvw] w-[80dvw] md:h-[36dvw] md:w-[64dvw] mx-auto my-auto object-cover object-center block rounded-md" width={1000} height={1000} />
           </div>
           {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
