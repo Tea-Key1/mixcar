@@ -11,7 +11,7 @@ export default function Experience() {
     const width = viewport.width;
     const height = viewport.height;
     const aspectRatio = width / height
-    // console.log("rerendering")
+
 
     // const level = useLoader(GLTFLoader, "/models/upbge-sample-level-01.glb")
     // const navMesh = useLoader(GLTFLoader, "/models/upbge-sample-level-01-navmesh.glb")
@@ -54,14 +54,12 @@ export default function Experience() {
     }, [target, vehicle]);
 
 
-
-
-    vehicle.setRenderComponent(groupRef.current, (entity: YUKA.GameEntity, renderComponent) => {
-        renderComponent?.matrix.copy(entity.worldMatrix as any)
-    })
-    target.setRenderComponent(targetRef.current, (entity: YUKA.GameEntity, renderComponent) => {
-        renderComponent?.matrix.copy(entity.worldMatrix as any)
-    })
+    // vehicle.setRenderComponent(groupRef.current, (entity: YUKA.GameEntity, renderComponent) => {
+    //     renderComponent?.matrix.copy(entity.worldMatrix as any)
+    // })
+    // target.setRenderComponent(targetRef.current, (entity: YUKA.GameEntity, renderComponent) => {
+    //     renderComponent?.matrix.copy(entity.worldMatrix as any)
+    // })
 
     const entityManager = new YUKA.EntityManager();
     entityManager.add(vehicle);
@@ -191,6 +189,6 @@ export default function Experience() {
         <ambientLight intensity={2} />
         {/* <directionalLight position={[-5, 5, 5]} intensity={1} color={"#F4E7A1"}/> */}
         {/* <directionalLight position={[-5, 5, 5]} intensity={1} color={"#345A84"}/> */}
-        {/* <OrbitControls /> */}
+
     </Fragment>)
 }

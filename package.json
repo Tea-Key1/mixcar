@@ -13,6 +13,7 @@
     "@react-three/fiber": "^8.15.11",
     "@types/yuka": "^0.7.4",
     "@vercel/analytics": "^1.2.2",
+    "@vercel/postgres": "^0.8.0",
     "@vercel/speed-insights": "^1.0.10",
     "contentful": "^10.6.12",
     "flowbite": "^2.2.0",
@@ -22,6 +23,7 @@
     "react": "^18",
     "react-dom": "^18",
     "three": "^0.158.0",
+    "vercel": "^33.7.0",
     "yuka": "^0.7.8",
     "zustand": "^4.4.6"
   },
