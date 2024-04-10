@@ -1,6 +1,6 @@
 import { sql } from "@vercel/postgres"
 
-async function seed(){
+async function seed() {
     const cretateTable = await sql`
         CREATE TABLE IF NOT EXIST users (
             id SERIAL PROMARY KEY,
@@ -10,6 +10,6 @@ async function seed(){
             "createdAT" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
         );
         `;
-    
+
     const users = await Promise.all([])
 }
